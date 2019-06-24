@@ -49,5 +49,3 @@ public class SolutionA {
         return solIndices;
     }
 }
-
-
