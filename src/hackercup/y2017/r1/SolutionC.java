@@ -5,7 +5,7 @@ import java.util.*;
 
 public class SolutionC {
     public static void main(String[] args) {
-        String fileName = "src\\hackercup\\y2017\\r1\\sampleC.txt";
+        String fileName = "src\\hackercup\\y2017\\r1\\inputC.txt";
         String output = "src\\hackercup\\y2017\\r1\\outputC.txt";
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -30,11 +30,15 @@ public class SolutionC {
 
     private Graph graph;
     private Delivery[] deliveries;
+    private long[][] distances;
+    private int[][] at;
+    private int K;
 
 
     public SolutionC(int N, int M, int K, BufferedReader br) throws IOException{
         this.graph = new Graph(N);
         this.deliveries = new Delivery[K];
+        this.K = K;
         for (int i = 0; i < M; i++) {
             String[] edgeInfo = br.readLine().trim().split("\\s+");
             int v1 = Integer.parseInt(edgeInfo[0]);
@@ -46,28 +50,80 @@ public class SolutionC {
         for (int i = 0; i < K ; i++) {
             String[] deliveryInfo = br.readLine().trim().split("\\s+");
             int from = Integer.parseInt(deliveryInfo[0]);
-            int to = Integer.parseInt(deliveryInfo[0]);
-            deliveries[i] = new Delivery(from, to);
+            int to = Integer.parseInt(deliveryInfo[1]);
+            deliveries[i] = new Delivery(from  - 1, to - 1);
         }
+        distances = new long[2 * K][2];
+        at = new int[2 * K][2];
+
     }
 
-    public int getSolution() {
+    public long getSolution() {
+        if (K == 1) {
+            return graph.hasPath(deliveries[0].S, deliveries[0].D) ?
+                    graph.dist(deliveries[0].S, deliveries[0].D) : -1;
+        }
+        //graph.print();
+        if (graph.hasPath(0, deliveries[0].S)) {
+            distances[0][0] = graph.dist(0, deliveries[0].S);
+            distances[0][1] = distances[0][0];
+            at[0][0] = deliveries[0].S;
+            at[0][1] = at[0][0];
+        }
+        else {
+            return -1;
+        }
+        int to0 = 0;
+        int to1 = 0;
+        for (int i = 1; i < 2 * K - 1; i += 2) {
+            to0 = deliveries[(i / 2) + 1].S;
+            to1 = deliveries[i / 2].D;
 
-        return 1; // placeholder
+            if (!graph.hasPath(at[i - 1][0], to0) || !graph.hasPath(to0, to1)) {
+                return -1;
+            }
+            at[i][0] = to0;
+            at[i][1] = to1;
+            at[i + 1][0] = to1;
+            at[i + 1][1] = to0;
+            distances[i][0] = Math.min(graph.dist(at[i - 1][0], to0) + distances[i - 1][0],
+                    graph.dist(at[i - 1][1], to0) + distances[i - 1][1]);
+            distances[i][1] = Math.min(graph.dist(at[i - 1][0], to1) + distances[i - 1][0],
+                    graph.dist(at[i - 1][1], to1) + distances[i - 1][1]);
+            distances[i + 1][0] = distances[i][0] + graph.dist(to0, to1);
+            distances[i + 1][1] = distances[i][1] + graph.dist(to0, to1);
+        }
+        to0 = deliveries[K - 1].D;
+        if (!graph.hasPath(at[K - 2][0], to0))
+            return -1;
+        distances[2 * K - 1][0] = distances[2 * K - 2][0] + graph.dist(at[2 * K - 2][0], to0);
+        distances[2 * K - 1][1] = distances[2 * K - 2][1] + graph.dist(at[2 * K - 2][1], to0);
+        at[2 * K - 1][0] = to0;
+        at[2 * K - 1][1] = to1;
+
+        // TODO: uncomment below for debugging
+        /*System.out.println("Distances");
+        for (int i = 0; i < 2 * K; i ++)
+            System.out.println(Arrays.toString(distances[i]));
+        System.out.println("At");
+        for (int i = 0; i < 2 * K; i ++)
+            System.out.println(Arrays.toString(at[i]));*/
+
+        return Math.min(distances[2 * K - 1][1], distances[2 * K - 1][0]);
     }
 
 
     public class Graph {
-        private int[][] dist;
+        private long[][] dist;
         private int V;
         private Map<Integer, HashSet<Integer>> edges;
 
         Graph(int V) {
             this.V = V;
-            this.dist = new int[V][V];
+            this.dist = new long[V][V];
             this.edges = new HashMap<>();
             for (int i = 0; i < V; i++) {
-                Arrays.fill(dist[i], Integer.MAX_VALUE);
+                Arrays.fill(dist[i], Long.MAX_VALUE);
                 dist[i][i] = 0;
                 edges.put(i, new HashSet<>());
             }
@@ -81,6 +137,7 @@ public class SolutionC {
         }
 
         void calculateShortestPaths() {
+            // inspired by Dijkstra's algorithm
             for (int i = 0; i < V; i++) {
                 boolean[] visited = new boolean[V];
                 ArrayDeque<Integer> queue = new ArrayDeque<>();
@@ -102,8 +159,20 @@ public class SolutionC {
             }
         }
 
-        
+        boolean hasPath(int v1, int v2) {
+            return !(dist[v1][v2] == Long.MAX_VALUE);
+        }
 
+        long dist(int v1, int v2) {
+            return dist[v1][v2];
+        }
+
+        void print() {
+            // for debugging
+            for (int i = 0; i < V; i ++) {
+                System.out.println(Arrays.toString(dist[i]));
+            }
+        }
     }
 
     public class Delivery {

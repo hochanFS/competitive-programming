@@ -9,8 +9,8 @@ import java.util.Arrays;
  */
 public class SolutionA {
     public static void main(String[] args) {
-        String fileName = "src\\hackercup\\y2017\\r1\\sampleB.txt";
-        String output = "src\\hackercup\\y2017\\r1\\outputB.txt";
+        String fileName = "src\\hackercup\\y2017\\r1\\inputA.in";
+        String output = "src\\hackercup\\y2017\\r1\\outputA.out";
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
 
@@ -61,9 +61,9 @@ public class SolutionA {
         Arrays.fill(memo[0], MAX_COST);
         memo[0][0] = 0;
         for (int i = 1; i <= N; i++) {
-            memo[i][0] = 0;
             int maxFill = Math.min(i * M, N);
             Arrays.fill(memo[i], MAX_COST);
+            memo[i][0] = 0;
             for (int j = 0; j <= maxFill; j++) {
 
                 for (int k = 0; k <= Math.min(j, M); k++) {

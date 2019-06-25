@@ -5,7 +5,7 @@ import java.util.*;
 
 public class SolutionB {
     public static void main(String[] args) {
-        String fileName = "src\\hackercup\\y2017\\r1\\sampleB.txt";
+        String fileName = "src\\hackercup\\y2017\\r1\\inputB.txt";
         String output = "src\\hackercup\\y2017\\r1\\outputB.txt";
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
