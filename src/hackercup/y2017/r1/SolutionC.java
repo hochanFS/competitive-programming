@@ -3,6 +3,10 @@ package hackercup.y2017.r1;
 import java.io.*;
 import java.util.*;
 
+/**
+ * @author Hochan Lee (hochan.lee@financescript.com)
+ */
+
 public class SolutionC {
     public static void main(String[] args) {
         String fileName = "src\\hackercup\\y2017\\r1\\inputC.txt";
