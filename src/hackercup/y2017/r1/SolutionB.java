@@ -97,6 +97,13 @@ public class SolutionB {
         return max;
     }
 
+    public int getSolution2() {
+        for (int i = 0; i < N; i ++) {
+            //TODO: add revised code
+        }
+        return 0;
+    }
+
     public class Point implements Comparable<Point> {
         long X;
         long Y;
