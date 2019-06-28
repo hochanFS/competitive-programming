@@ -10,7 +10,7 @@ import java.util.*;
 public class SolutionB {
     public static void main(String[] args) {
         String fileName = "src\\hackercup\\y2017\\r1\\inputB.txt";
-        String output = "src\\hackercup\\y2017\\r1\\outputB.txt";
+        String output = "src\\hackercup\\y2017\\r1\\sampleOutputB.txt";
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
 
@@ -57,13 +57,14 @@ public class SolutionB {
             Point zombie = sortedZombies.get(i);
             long zX = zombie.X;
             for (long zY : uniqueHeights) {
-                if (Math.abs(zombie.Y - zY) > R) {
+                if (zY < zombie.Y || zY - zombie.Y > R) {
                     continue;
                 }
                 Set<Point> temp = new HashSet<>(zombieLocations);
                 int outerCount = 0;
                 for (Point anotherZombie : zombieLocations) {
-                    if (zX <= anotherZombie.X + R && Math.abs(zY - anotherZombie.Y) <= R) {
+                    if (zX <= anotherZombie.X + R && zY <= anotherZombie.Y + R &&
+                            zX >= anotherZombie.X && zY >= anotherZombie.Y) {
                         outerCount++;
                         temp.remove(anotherZombie);
                     }
@@ -82,12 +83,13 @@ public class SolutionB {
             Set<Point> temp = new TreeSet<>(zombies);
             long zX = zombie.X;
             for (long zY : uniqueHeights) {
-                if (Math.abs(zombie.Y - zY) > R) {
+                if (zY < zombie.Y || zY - zombie.Y > R) {
                     continue;
                 }
                 int innerCount = 0;
                 for (Point anotherZombie : temp) {
-                    if (zX <= anotherZombie.X + R && Math.abs(zY - anotherZombie.Y) <= R) {
+                    if (zX <= anotherZombie.X + R && zY <= anotherZombie.Y + R &&
+                    zX >= anotherZombie.X && zY >= anotherZombie.Y) {
                         innerCount++;
                     }
                 }
