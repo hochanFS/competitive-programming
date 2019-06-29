@@ -9,7 +9,7 @@ import java.util.*;
 
 public class SolutionC {
     public static void main(String[] args) {
-        String fileName = "src\\hackercup\\y2017\\r1\\inputC.txt";
+        String fileName = "src\\hackercup\\y2017\\r1\\inputC.in";
         String output = "src\\hackercup\\y2017\\r1\\outputC.txt";
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -40,7 +40,7 @@ public class SolutionC {
 
 
     public SolutionC(int N, int M, int K, BufferedReader br) throws IOException{
-        this.graph = new Graph(N);
+        this.graph = new Graph(N, M);
         this.deliveries = new Delivery[K];
         this.K = K;
         for (int i = 0; i < M; i++) {
@@ -64,8 +64,8 @@ public class SolutionC {
 
     public long getSolution() {
         if (K == 1) {
-            return graph.hasPath(deliveries[0].S, deliveries[0].D) ?
-                    graph.dist(deliveries[0].S, deliveries[0].D) : -1;
+            return graph.hasPath(0, deliveries[0].S) && graph.hasPath(deliveries[0].S, deliveries[0].D) ?
+                    graph.dist(0, deliveries[0].S) + graph.dist(deliveries[0].S, deliveries[0].D) : -1;
         }
         //graph.print();
         if (graph.hasPath(0, deliveries[0].S)) {
@@ -120,10 +120,13 @@ public class SolutionC {
     public class Graph {
         private long[][] dist;
         private int V;
+        private int E;
         private Map<Integer, HashSet<Integer>> edges;
+        private Edge[][] edgeTo;
 
-        Graph(int V) {
+        Graph(int V, int E) {
             this.V = V;
+            this.E = E;
             this.dist = new long[V][V];
             this.edges = new HashMap<>();
             for (int i = 0; i < V; i++) {
@@ -131,6 +134,7 @@ public class SolutionC {
                 dist[i][i] = 0;
                 edges.put(i, new HashSet<>());
             }
+            edgeTo = new Edge[V][E];
         }
 
         void addEdge(int v1, int v2, int weight) {
@@ -144,6 +148,7 @@ public class SolutionC {
             // inspired by Dijkstra's algorithm
             for (int i = 0; i < V; i++) {
                 boolean[] visited = new boolean[V];
+                PriorityQueue<Edge> pq = new PriorityQueue<>();
                 ArrayDeque<Integer> queue = new ArrayDeque<>();
                 for (int j : edges.get(i))
                     queue.addLast(j);
@@ -157,6 +162,9 @@ public class SolutionC {
                             queue.addLast(v2);
                         }
                         dist[i][v2] = Math.min(dist[i][v2], dist[i][v1] + dist[v1][v2]);
+                        dist[v2][i] = dist[i][v2];
+                        dist[i][v1] = Math.min(dist[i][v1], dist[i][v2] + dist[v2][v1]);
+                        dist[v1][i] = dist[i][v1];
                     }
                     visited[v1] = true;
                 }
@@ -185,6 +193,25 @@ public class SolutionC {
         Delivery(int S, int D) {
             this.S = S;
             this.D = D;
+        }
+    }
+
+    public class Edge implements Comparable<Edge>{
+        int v1;
+        int v2;
+        long weight;
+        Edge(int v1, int v2, long weight) {
+            this.v1 = v1;
+            this.v2 = v2;
+            this.weight = weight;
+        }
+
+        @Override
+        public int compareTo(Edge o) {
+            if (this.weight != o.weight) {
+                return Long.compare(this.weight, o.weight);
+            }
+            return Integer.compare(this.v2, o.v2);
         }
     }
 

@@ -3,11 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB$Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/outputB.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/outputB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/inputA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/inputB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/inputC.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/outputA.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/outputC.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/outputC.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleC.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleOutputB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleOutputC.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleSolutionA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleSolutionB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/sampleSolutionC.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/solutionA.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/outputC.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/outputC.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +36,11 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -47,28 +60,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15211" />
+          <entry key="java" value="15953" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15211" />
+          <entry key="JAVA" value="15953" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/inputB.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/inputA.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/BigSampleWriterA.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+            <state relative-caret-position="1020">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="1904">
+              <caret line="123" column="53" lean-forward="true" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/System.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9080">
+            <state relative-caret-position="9120">
               <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
             </state>
           </provider>
@@ -168,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/hackercup/y2018/qualification/SolutionA.java" />
         <option value="$PROJECT_DIR$/src/hackercup/y2017/r1/BigSampleWriterA.java" />
         <option value="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionA.java" />
-        <option value="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java" />
         <option value="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java" />
+        <option value="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java" />
       </list>
     </option>
   </component>
@@ -184,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,11 +224,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561695455902" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561791668262" />
     <property name="last_opened_file_path" value="C:/Algorithm/C1S1" />
   </component>
   <component name="RecentsManager">
@@ -246,7 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SolutionB">
+  <component name="RunManager" selected="Application.SolutionC">
     <configuration name="BigSampleWriterA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hackercup.y2017.r1.BigSampleWriterA" />
       <module name="competitiveProgramming" />
@@ -321,9 +324,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SolutionC" />
         <item itemvalue="Application.SolutionB" />
         <item itemvalue="Application.SolutionA (1)" />
-        <item itemvalue="Application.SolutionC" />
         <item itemvalue="Application.BigSampleWriterA" />
         <item itemvalue="Application.SolutionA" />
       </list>
@@ -346,7 +349,7 @@
     <frame x="-1088" y="-751" width="1096" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -376,7 +379,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -385,7 +388,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32879046" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14139694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,6 +524,13 @@
     <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/outputA.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/outputB.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="48" column="11" selection-start-line="33" selection-start-column="10" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/inputB.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -544,27 +554,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/outputB.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="48" column="11" selection-start-line="33" selection-start-column="10" selection-end-line="48" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Competition/src/hackercup/y2017/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3480">
           <caret line="197" column="17" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,15 +573,25 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9080">
+        <state relative-caret-position="9120">
           <caret line="528" column="30" selection-start-line="528" selection-start-column="30" selection-end-line="528" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+        <state relative-caret-position="1020">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="123" column="53" lean-forward="true" selection-start-line="123" selection-start-column="53" selection-end-line="123" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
