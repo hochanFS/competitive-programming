@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/codeforces/round621d2/SolutionA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +44,13 @@
       <recent name="C:\competitiveProgramming\competitiveProgramming\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SolutionC">
-    <configuration name="BigSampleWriterA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2017.r1.BigSampleWriterA" />
+  <component name="RunManager" selected="Application.SolutionA (2)">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codejam.y2018.round1A2.Solution" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackercup.y2017.r1.*" />
+          <option name="PATTERN" value="codejam.y2018.round1A2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2018.qualification.SolutionA" />
+    <configuration name="SolutionA (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforces.round621d2.SolutionA" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackercup.y2018.qualification.*" />
+          <option name="PATTERN" value="codeforces.round621d2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,19 +111,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SolutionA" />
-      <item itemvalue="Application.BigSampleWriterA" />
       <item itemvalue="Application.SolutionA (1)" />
       <item itemvalue="Application.SolutionB" />
       <item itemvalue="Application.SolutionC" />
+      <item itemvalue="Application.SolutionA (2)" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SolutionA (2)" />
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.SolutionC" />
         <item itemvalue="Application.SolutionB" />
         <item itemvalue="Application.SolutionA (1)" />
-        <item itemvalue="Application.BigSampleWriterA" />
-        <item itemvalue="Application.SolutionA" />
       </list>
     </recent_temporary>
   </component>
@@ -150,10 +151,56 @@
       <updated>1561094300986</updated>
       <workItem from="1582081748443" duration="35000" />
     </task>
+    <task id="LOCAL-00001" summary="Added documentation #1">
+      <created>1582082156555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582082156555</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added documentation #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation #1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582088068139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582088068139" />
+    <state x="604" y="114" key="CommitChangelistDialog2" timestamp="1582082156035">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="604" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582082156035" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582145254684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582145254684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582145254684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582145254684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582082157622">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582082157622" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582128890628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582128890628" />
   </component>
   <component name="masterDetails">
     <states>
