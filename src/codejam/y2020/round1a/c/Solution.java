@@ -1,10 +1,9 @@
-package codejam.y2020.round1.d;
+package codejam.y2020.round1a.c;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.*;
 import java.util.StringTokenizer;
 import java.io.PrintWriter;
 
@@ -24,6 +23,7 @@ public class Solution {
             ie.printStackTrace();
         }
     }
+
 
     //@
     static class In {

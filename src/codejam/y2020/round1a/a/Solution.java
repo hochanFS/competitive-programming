@@ -1,4 +1,4 @@
-package codejam.y2020.round1.a;
+package codejam.y2020.round1a.a;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -36,10 +36,16 @@ public class Solution {
     private static String getString(String[] values) {
         List<String[]> splitString = new ArrayList<>();
         for (String s : values) {
-            splitString.add(s.split("\\*"));
+            if (s.endsWith("*"))
+                s += "@";
+            String[] temp = s.split("\\*");
+            if (temp[temp.length - 1].equals("@"))
+                temp[temp.length - 1] = "";
+            splitString.add(temp);
         }
         String maxLeft = "";
         String maxRight = "";
+        StringBuilder sb = new StringBuilder();
         for (String[] strings : splitString) {
             String left = strings[0];
             String right = strings[strings.length - 1];
@@ -47,39 +53,24 @@ public class Solution {
                 maxLeft = left;
             if (maxRight.length() < right.length())
                 maxRight = right;
-        }
-
-        for (int i = 3; i <= 50; i++) {
-            for (String[] strings : splitString) {
-                if (strings.length < i)
-                    continue;
-                maxLeft = merge(maxLeft, strings[i - 2]);
+            for (int i = 1; i < strings.length - 1; i++) {
+                sb.append(strings[i]);
             }
         }
 
-        String candidate = merge(maxLeft, maxRight);
+        String candidate = maxLeft + sb.toString() + maxRight;
 
         if (candidate.length() > 10000)
             return "*";
 
         for (String[] strings : splitString)
         {
-            if (! (candidate.startsWith(strings[0]) && candidate.endsWith(strings.length >= 2 ? strings[1] : "")))
+            if (! (candidate.startsWith(strings[0]) &&
+                    (strings[strings.length -1].isEmpty() || candidate.endsWith(strings[strings.length - 1]))))
                 return "*";
         }
         return candidate;
     }
-
-    private static String merge(String s1, String s2) {
-        for (int i = s2.length(); i > 0; i--) {
-            int index = s1.lastIndexOf(s2.substring(0, i));
-            if (index >= 0)
-                return s1 + s2.substring(s2.length() - i);
-        }
-        return s1 + s2;
-    }
-
-
 
     //@
     static class In {

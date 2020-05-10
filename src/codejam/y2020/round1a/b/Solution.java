@@ -1,4 +1,4 @@
-package codejam.y2020.round1.b;
+package codejam.y2020.round1a.b;
 
 import java.io.BufferedReader;
 import java.io.IOException;
