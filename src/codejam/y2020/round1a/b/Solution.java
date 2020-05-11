@@ -9,16 +9,21 @@ import java.util.StringTokenizer;
 import java.io.PrintWriter;
 
 public class Solution {
+
+    public static final int[][] directions = {{0, 1}, {1, 1}, {1, 0}, {-1, 0}, {0, -1}, {-1, -1}};
+
     public static void main(String[] args) {
 
         In in = new In(System.in);
         PrintWriter out = new PrintWriter(System.out);
         try {
+            long[][] memo = new long[300][300];
+            memo[1][1] = 1;
             int T = in.nextInt();
             for (int i = 1; i <= T; i++) {
                 int N = in.nextInt();
                 out.printf("Case #%d:\n", i);
-                for (int[] values : solvePascal(N)) {
+                for (long[] values : solvePascal(N, memo)) {
                     out.printf("%d %d\n", values[0], values[1]);
                 }
             }
@@ -29,63 +34,70 @@ public class Solution {
         }
     }
 
-    private static List<int[]> solvePascal(int n) {
-        String s = Integer.toBinaryString(n);
-        List<int[]> solution = new ArrayList<>();
-        if (n == 1) {
-            solution.add(new int[]{1, 1});
-            return solution;
+    private static List<long[]> unwrapPath(List<Long> paths) {
+        List<long[]> output = new ArrayList<>();
+        for (long path : paths) {
+            output.add(new long[]{path / 301, path % 301});
         }
-        boolean left = true;
-        int len = s.length();
-        for (int i = 1; i <= s.length() - 1; i++) {
-            int bit = s.charAt(i - 1) - '0';
-            if (left) {
-                for (int j = 1; j <= i; j++)
-                    solution.add(new int[]{i, j});
-            }
-            else {
-                for (int j = i; j >= 1; j--)
-                    solution.add(new int[]{i, j});
-            }
-            left = !left;
-        }
-        int value = (1 << (len - 1)) - 1;
+        return output;
+    }
 
-        int diff = n - value;
-        int index = len;
-        boolean usable = true;
-        while (diff > 0) {
-            if (left) {
-                solution.add(new int[]{index, 1});
-                diff--;
-                if (usable) {
-                    if (index > 3 && diff >= index + index - 1) {
-                        solution.add(new int[]{index, 2});
-                        solution.add(new int[]{index + 1, 2});
-                        diff -= (index + index - 1);
-                        usable = false;
-                    }
+    private static List<long[]> solvePascal(int n, long[][] memo) {
+        String s = Integer.toBinaryString(n); // e.g. 6 -> 1 1 0
+        List<Long> paths = new ArrayList<>();
+        Set<Long> seen = new HashSet<>();
+        seen.add(302L);
+        dfs(302, seen, paths, memo, 0, n); // start with (1, 1) with empty paths...
+        return unwrapPath(paths);
+    }
+
+    private static boolean dfs(long current, Set<Long> visited, List<Long> paths, long[][] memo, long sum, long target) {
+        long n = current / 301;
+        long k = current % 301;
+        long val = sum + getPascalValue((int)n, (int)k, memo);
+        paths.add(current);
+        if (val > target)
+            return false;
+        if (val == target)
+            return true;
+        PriorityQueue<long[]> pq = new PriorityQueue<>((u, v) -> Long.compare(v[1], u[1]));
+        for (int[] direction : directions) {
+            long nextN = n + direction[0];
+            long nextK = k + direction[1];
+            long key = getKey(nextN, nextK);
+            if (nextK <= nextN && nextK >= 1 && !visited.contains(key)) {
+                long addition = getPascalValue((int)nextN, (int)nextK, memo);
+                if (addition + sum <= target) {
+                    pq.add(new long[]{key, addition + sum});
                 }
-                else usable = true;
+
             }
-            else {
-                solution.add(new int[]{index, index});
-                diff--;
-                if (usable) {
-                    if (index > 3 && diff >= index + index - 1) {
-                        solution.add(new int[]{index, index - 1});
-                        solution.add(new int[]{index + 1, index});
-                        diff -= (index + index - 1);
-                        usable = false;
-                    }
-                }
-                else
-                    usable = true;
-            }
-            index++;
+
         }
-        return solution;
+        while(!pq.isEmpty()) {
+            long[] values = pq.poll();
+            long key = values[0];
+            long cum = values[1];
+            visited.add(key);
+            if (dfs(key, visited, paths, memo, cum, target))
+                return true;
+            visited.remove(key);
+            paths.remove(paths.size() - 1);
+        }
+        return false;
+    }
+
+    private static long getPascalValue(int n, int k, long[][] memo) {
+        if (k == 1 || k == n)
+            return 1;
+        if (memo[n][k] != 0L)
+            return memo[n][k];
+        memo[n][k] = getPascalValue(n - 1, k - 1, memo) + getPascalValue(n - 1, k, memo);
+        return memo[n][k];
+    }
+
+    private static long getKey(long n, long k) {
+        return n * 301 + k;
     }
 
     //@
