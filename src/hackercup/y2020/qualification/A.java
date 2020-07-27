@@ -1,5 +1,6 @@
 package hackercup.y2020.qualification;
 
+
 import java.io.*;
 import java.util.*;
 
