@@ -2,9 +2,130 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codeforces/round621d2/SolutionA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionC$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionC$Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionC$Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionC$Line.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codeforces/round558d2/SolutionC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/qualificationround1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/qualificationround1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/qualificationround2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/qualificationround2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A2/Solution$Casher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A2/Solution$Casher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A2/Solution$FastScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A2/Solution$FastScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1A2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1AC/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1AC/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1AC/Solution$Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1AC/Solution$Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1AC/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1AC/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP1/Solution$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP1/Solution$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP1/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP1/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution$Formula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution$Formula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1BP3/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP1/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP1/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP2/Solution$Demand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP2/Solution$Demand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP3/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP3/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2018/round1CP3/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround3/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround3/trial2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/qualificationround3/trial2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai/Solution$Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai/Solution$Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai/Solution$FastScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai/Solution$FastScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$ArrayUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$ArrayUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Edge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Graph$GraphEdge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Graph$GraphEdge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$InputReader$SpaceCharFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$InputReader$SpaceCharFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$InputReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$InputReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntAbstractStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntAbstractStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntCollection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntList$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntList$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntReversableCollection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntReversableCollection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntStream$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntStream$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$IntStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$OutputWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$OutputWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Pylons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Pylons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Range.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution$Range.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Senpai2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Solution$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Solution$Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Solution$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Solution$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/Try2/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution$Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution$GraphPlain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution$GraphPlain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP1/try3/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Solution$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Solution$Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Try2/Solution$Coordinate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Try2/Solution$Coordinate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Try2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Try2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Try2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP2/Try2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP4/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP4/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP4/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1AP4/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP1/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP1/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP2/Solution$SubRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP2/Solution$SubRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/try2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/try2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/try2/Solution$SegmentTreeMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/try2/Solution$SegmentTreeMax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/try2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP3/try2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution$C.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution$C.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution$FastScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution$FastScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution$SparseTableMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution$SparseTableMax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP4/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP5/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP5/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP5/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1BP5/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP1/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP1/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP1/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP1/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP2/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP2/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP3/Solution$Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP3/Solution$Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP3/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP3/Solution$In.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1CP3/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1bp3v2/Solution$MyScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1bp3v2/Solution$MyScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1bp3v2/Solution$SegmentsTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1bp3v2/Solution$SegmentsTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1bp3v2/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2019/round1bp3v2/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/BigSampleWriterA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/BigSampleWriterA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC$Delivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC$Delivery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC$Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC$Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/SolutionC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/outputC.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2017/r1/outputC.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/qualification/SolutionA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/qualification/SolutionA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/qualification/SolutionB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/qualification/SolutionB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/qualification/SolutionC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/qualification/SolutionC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionB$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionB$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionC$Parkourist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionC$Parkourist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2018/r1/SolutionD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionC$BooleanEvaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionC$BooleanEvaluator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionD$Constraint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionD$Constraint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionD$TreeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionD$TreeBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/hackercup/y2019/qualification/SolutionD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +138,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>gcd</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,20 +153,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561791668262" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hackercup_p" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\competitiveProgramming\competitiveProgramming\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SolutionA (2)">
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codejam.y2018.round1A2.Solution" />
+  <component name="RunManager" selected="Application.Prep">
+    <configuration name="Prep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codejam.y2019.round1CP3.Prep" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codejam.y2018.round1A2.*" />
+          <option name="PATTERN" value="codejam.y2019.round1CP3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -58,12 +174,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionA (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2017.r1.SolutionA" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codejam.y2018.round1A2.Solution" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackercup.y2017.r1.*" />
+          <option name="PATTERN" value="codejam.y2018.round1A2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,19 +227,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SolutionA (1)" />
+      <item itemvalue="Application.Prep" />
+      <item itemvalue="Application.SolutionA (2)" />
       <item itemvalue="Application.SolutionB" />
       <item itemvalue="Application.SolutionC" />
-      <item itemvalue="Application.SolutionA (2)" />
       <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prep" />
         <item itemvalue="Application.SolutionA (2)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.SolutionC" />
         <item itemvalue="Application.SolutionB" />
-        <item itemvalue="Application.SolutionA (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582082156555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Solved CF 621-1">
+      <created>1582145534473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582145534473</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,41 +289,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added documentation #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation #1" />
+    <MESSAGE value="Solved CF 621-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved CF 621-1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582088068139">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1595891070286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582088068139" />
-    <state x="604" y="114" key="CommitChangelistDialog2" timestamp="1582082156035">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595891070286" />
+    <state x="625" y="219" key="NewModule_or_Project.wizard" timestamp="1595891064832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="604" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582082156035" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1582145254684">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1582145254684">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1582145254684">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1582145254684">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582145254684" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1582082157622">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582082157622" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582128890628">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1080.-504.1080.1880@0.0.1920.1040" timestamp="1582128890628" />
+    <state x="625" y="219" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595891064832" />
   </component>
   <component name="masterDetails">
     <states>
