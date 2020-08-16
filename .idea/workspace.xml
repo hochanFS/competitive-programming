@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/A1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/A2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/A3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/codejam/y2020/round1a/b/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2020/round1a/b/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +33,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561791668262" />
@@ -38,13 +44,13 @@
       <recent name="C:\competitiveProgramming\competitiveProgramming\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution (5)">
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codejam.y2020.round1c.c.Solution" />
+  <component name="RunManager" selected="Application.A3">
+    <configuration name="A1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.A1" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codejam.y2020.round1c.c.*" />
+          <option name="PATTERN" value="hackercup.y2020.round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -52,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codejam.y2020.round1c.b.Solution" />
+    <configuration name="A2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.A2" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codejam.y2020.round1c.b.*" />
+          <option name="PATTERN" value="hackercup.y2020.round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codejam.y2020.round1a.a.Solution" />
+    <configuration name="A3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.A3" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codejam.y2020.round1a.a.*" />
+          <option name="PATTERN" value="hackercup.y2020.round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codejam.y2020.round1a.b.Solution" />
+    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.B" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codejam.y2020.round1a.b.*" />
+          <option name="PATTERN" value="hackercup.y2020.round1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,33 +97,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codejam.y2020.round1c.a.Solution" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="competitiveProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codejam.y2020.round1c.a.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution (1)" />
-      <item itemvalue="Application.Solution (2)" />
-      <item itemvalue="Application.Solution (3)" />
-      <item itemvalue="Application.Solution (5)" />
-      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.A1" />
+      <item itemvalue="Application.B" />
+      <item itemvalue="Application.A2" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.A3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution (5)" />
-        <item itemvalue="Application.Solution (3)" />
-        <item itemvalue="Application.Solution (1)" />
-        <item itemvalue="Application.Solution (2)" />
-        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.A3" />
+        <item itemvalue="Application.B" />
+        <item itemvalue="Application.A2" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.A1" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589183189288</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merged">
+      <created>1595891298777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595891298777</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,45 +199,56 @@
     <MESSAGE value="Added my code from first attempts for CodeJam 2020" />
     <MESSAGE value="Solved codejam\y2020\round1a\a" />
     <MESSAGE value="2nd Attempt on codejam\y2020\round1a\b" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd Attempt on codejam\y2020\round1a\b" />
+    <MESSAGE value="Merged" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="114" key="CommitChangelistDialog2" timestamp="1595891272895">
+    <state x="1725" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1597586412619">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1725" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597586412619" />
+    <state x="604" y="114" key="CommitChangelistDialog2" timestamp="1595891298380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="604" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891272895" />
+    <state x="604" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891298380" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1589083040219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589083040219" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589120807142">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1597558737293">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589120807142" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1589185086498">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597558737293" />
+    <state width="2517" height="293" key="GridCell.Tab.0.bottom" timestamp="1597589994652">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086498" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1589185086498">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="293" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
+    <state width="2517" height="293" key="GridCell.Tab.0.center" timestamp="1597589994652">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086498" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1589185086497">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="293" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
+    <state width="2517" height="293" key="GridCell.Tab.0.left" timestamp="1597589994652">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086497" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1589185086498">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="293" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
+    <state width="2517" height="293" key="GridCell.Tab.0.right" timestamp="1597589994652">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086498" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589183190075">
+    <state width="2517" height="293" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595891299881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589183190075" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589120794925">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891299881" />
+    <state x="875" y="463" key="com.intellij.ide.util.TipDialog" timestamp="1597608782883">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589120794924" />
+    <state x="875" y="463" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597608782883" />
   </component>
   <component name="masterDetails">
     <states>
