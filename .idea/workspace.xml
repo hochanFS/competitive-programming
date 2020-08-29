@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/A1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/A2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/A3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round1/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round2/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round2/B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +40,13 @@
       <recent name="C:\competitiveProgramming\competitiveProgramming\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.A3">
-    <configuration name="A1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.A1" />
+  <component name="RunManager" selected="Application.B (1)">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round2.A" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackercup.y2020.round1.*" />
+          <option name="PATTERN" value="hackercup.y2020.round2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,6 +80,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="B (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round2.B" />
+      <module name="competitiveProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackercup.y2020.round2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.B" />
       <module name="competitiveProgramming" />
@@ -97,27 +106,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="competitiveProgramming" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.A1" />
-      <item itemvalue="Application.B" />
       <item itemvalue="Application.A2" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.A3" />
+      <item itemvalue="Application.B" />
+      <item itemvalue="Application.A" />
+      <item itemvalue="Application.B (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.A3" />
+        <item itemvalue="Application.B (1)" />
         <item itemvalue="Application.B" />
+        <item itemvalue="Application.A" />
+        <item itemvalue="Application.A3" />
         <item itemvalue="Application.A2" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.A1" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595891298777</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Hackercup 2020 solution. A3 is wrong.">
+      <created>1597608813332</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597608813332</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,55 +209,56 @@
     <MESSAGE value="Solved codejam\y2020\round1a\a" />
     <MESSAGE value="2nd Attempt on codejam\y2020\round1a\b" />
     <MESSAGE value="Merged" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged" />
+    <MESSAGE value="Hackercup 2020 solution. A3 is wrong." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hackercup 2020 solution. A3 is wrong." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1725" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1597586412619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1725" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597586412619" />
-    <state x="604" y="114" key="CommitChangelistDialog2" timestamp="1595891298380">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1716" y="585" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598722649236">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1716" y="585" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400@0.0.2560.1400" timestamp="1598722649236" />
+    <state x="805" y="153" key="CommitChangelistDialog2" timestamp="1597608812710">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="604" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891298380" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1589083040219">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589083040219" />
-    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1597558737293">
+    <state x="805" y="153" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1597608812710" />
+    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1597725211130">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589120807142" />
-    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597558737293" />
-    <state width="2517" height="293" key="GridCell.Tab.0.bottom" timestamp="1597589994652">
+    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597725211130" />
+    <state width="2517" height="294" key="GridCell.Tab.0.bottom" timestamp="1598730956679">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086498" />
-    <state width="2517" height="293" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
-    <state width="2517" height="293" key="GridCell.Tab.0.center" timestamp="1597589994652">
+    <state width="2517" height="294" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
+    <state width="2517" height="294" key="GridCell.Tab.0.center" timestamp="1598730956679">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086498" />
-    <state width="2517" height="293" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
-    <state width="2517" height="293" key="GridCell.Tab.0.left" timestamp="1597589994652">
+    <state width="2517" height="294" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
+    <state width="2517" height="294" key="GridCell.Tab.0.left" timestamp="1598730956679">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086497" />
-    <state width="2517" height="293" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
-    <state width="2517" height="293" key="GridCell.Tab.0.right" timestamp="1597589994652">
+    <state width="2517" height="294" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
+    <state width="2517" height="294" key="GridCell.Tab.0.right" timestamp="1598730956679">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589185086498" />
-    <state width="2517" height="293" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597589994652" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1595891299881">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="294" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
+    <state x="736" y="341" key="Vcs.Push.Dialog.v2" timestamp="1597608814758">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891299881" />
-    <state x="875" y="463" key="com.intellij.ide.util.TipDialog" timestamp="1597608782883">
+    <state x="736" y="341" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597608814758" />
+    <state x="875" y="463" key="com.intellij.ide.util.TipDialog" timestamp="1597725185421">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589120794924" />
-    <state x="875" y="463" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597608782883" />
+    <state x="875" y="463" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597725185421" />
+    <state x="1583" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1598725067726">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1583" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1598725067726" />
   </component>
   <component name="masterDetails">
     <states>
