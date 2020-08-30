@@ -29,11 +29,6 @@ public class B {
         } catch(IOException ie) {
             ie.printStackTrace();
         }
-//        double[] expected = new double[3];
-//        double[][] dp = new double[3][3];
-//        boolean[][] filled = new boolean[3][3];
-//        System.out.println(calculate(filled, dp, 1, 1, 1.0));
-//        System.out.println("dp" + calculate(filled, dp, 0, 1, 1.0));
     }
 
     private static String solve(int n, double p) {
@@ -47,7 +42,6 @@ public class B {
             expected[i] = calculate(filled, dp, i, n - 1 - i, p);
         }
 
-        // print
         for (int i = 0; i < n; i++) {
             DecimalFormat df = new DecimalFormat("#.00000000");
             sb.append(df.format(expected[i])).append('\n');
@@ -62,17 +56,12 @@ public class B {
         int matchBetweenWinner = gt < 2 ? 0 : gt * (gt - 1) / 2;
         int matchBetweenLoser = lt < 2 ? 0 : lt * (lt - 1) / 2;
         int matchMixedWithoutMe = lt < 1 || gt < 1? 0 : lt * gt;
-//        System.out.println(matchBetweenWinner);
-//        System.out.println(matchBetweenLoser);
-//        System.out.println(matchMixedWithoutMe);
-//        System.out.println(lt);
 
         double ret = 1;
         int k = lt + gt + 1;
         int matches = k * (k - 1) / 2;
 
         double probLoserDecrease = (((double) matchBetweenLoser) + (double) (lt + matchMixedWithoutMe) * p) / (double) matches;
-//        System.out.println(probLoserDecrease);
         double probWinnerDecrease = (((double) matchBetweenWinner) + (double) (gt + matchMixedWithoutMe) * (1 - p)) / (double) matches;
 
         if (lt >= 1) ret += probLoserDecrease * calculate(filled, dp, lt - 1, gt, p);
@@ -81,18 +70,5 @@ public class B {
         dp[lt][gt] = ret;
         filled[lt][gt] = true;
         return ret;
-    }
-
-    private static double sum(List<Double> list) {
-        while (list.size() > 1) {
-            List<Double> newList = new ArrayList<>();
-            int s = 0, n = list.size() - 1;
-            while (s <= n) {
-                if (s != n) newList.add(list.get(s++) + list.get(n--));
-                else newList.add(list.get(s++));
-            }
-            list = newList;
-        }
-        return list.get(0);
     }
 }
