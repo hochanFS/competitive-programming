@@ -8,29 +8,28 @@ import java.util.*;
  */
 
 /**
- *
  * UPDATE (6/21/2019) FB HACKERCUP NOTIFIED IT AS A WRONG ANSWER.
  * TODO: correct the solution
- *
+ * <p>
  * In order for the tree to be valid, there should be only one zero (root).
  * Thus, we can quickly remove the case where all nodes are dependent on each other (no root).
  * In other cases, we can simply assume that a zero node's parent is another zero node.
  * In my case, I have conveniently selected the first-appearing zero as the parent.
- *
+ * <p>
  * One way to find the LCA of two nodes is to consider the depth of each node.
  * Then, we iteratively follow through the parents of the nodes in more depth
  * until the two nodes are the same.
- *
+ * <p>
  * Since each node has only one parent, we can assume that the size of all ancestors - 1 (root)
  * is the depth of each node.
- *
+ * <p>
  * To find all ancestors, I have used a stack data structure and iteratively added new ancestors.
  * For more detail, see TreeBuilder.getDepth() method.
  * This is one of the places that are most run-time heavy in this problem: O(N^2) in the worst case.
- *
+ * <p>
  * Finding the immediate parent node can be easily done by looking among the ancestors
  * until the depth is the node's depth - 1.
- *
+ * <p>
  * I have validated the tree works by manually finding the LCA and matching it with the text input.
  * Slow (which is unlikely an issue given the size constraints) - but the safest way to confirm!
  */
@@ -45,7 +44,7 @@ public class SolutionD {
             FileWriter fileWriter = new FileWriter(output);
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 String[] setting = br.readLine().trim().split("\\s+");
                 int N = Integer.parseInt(setting[0]);
                 int M = Integer.parseInt(setting[1]);
@@ -55,14 +54,13 @@ public class SolutionD {
                     for (int j = 1; j <= N; j++) {
                         sb.append(treeBuilder.getTree()[j]).append(' ');
                     }
-                }
-                else {
+                } else {
                     sb.append("Impossible");
                 }
                 printWriter.printf("Case #%d: %s\n", i, sb.toString().trim());
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -76,7 +74,7 @@ public class SolutionD {
         private boolean isValid;
         private Constraint constraints;
 
-        TreeBuilder(BufferedReader br, int N, int M) throws IOException{
+        TreeBuilder(BufferedReader br, int N, int M) throws IOException {
             this.isValid = true;
             this.N = N;
             this.ancestors = new HashMap<>();
@@ -171,8 +169,7 @@ public class SolutionD {
         int[] getTree() {
             if (isValid) {
                 return tree;
-            }
-            else {
+            } else {
                 throw new RuntimeException("Attempted to return an invalid tree");
             }
         }
@@ -199,9 +196,11 @@ public class SolutionD {
 
     public static class Constraint {
         private List<ArrayList<Integer>> lists;
+
         Constraint() {
             lists = new ArrayList<>();
         }
+
         public void add(int X, int Y, int Z) {
             Integer[] test = {X, Y, Z};
             lists.add(new ArrayList<>(Arrays.asList(test)));

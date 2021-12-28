@@ -25,8 +25,7 @@ public class Solution {
                 out.printf("Case #%d: %d", i, ans);
             }
             out.close();
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -54,7 +53,7 @@ public class Solution {
             cMaxSparseTree = constructMaxSparseTree(C);
             dMaxSparseTree = constructMaxSparseTree(D);
             count = 0;
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -87,8 +86,7 @@ public class Solution {
             for (int j = 0; j < N; j++) {
                 if (i == 0) {
                     maxSparseTree[i][j] = j;
-                }
-                else {
+                } else {
                     maxSparseTree[i][j] = maxSparseTree[i - 1][j];
                     if (j + (1 << i) < N &&
                             array[maxSparseTree[i - 1][j + (1 << i)]] > array[maxSparseTree[i - 1][j]]) {
@@ -128,11 +126,10 @@ public class Solution {
         int preval = l;
         for (int i = log; i >= 0; i--) {
             int temp = l + (1 << i);
-            if (getMax(array, maxSparseTable, l, val) < value){
+            if (getMax(array, maxSparseTable, l, val) < value) {
                 val = temp;
                 break;
-            }
-            else {
+            } else {
                 preval = temp;
             }
         }
@@ -147,15 +144,13 @@ public class Solution {
             mid = (hi1 + hi2) / 2;
             if (array[getMax(array, maxSparseTree, mid, r)] > value) {
                 hi2 = mid;
-            }
-            else {
+            } else {
                 hi1 = mid + 1;
             }
             System.out.println("stuck2");
         }
         return mid;
     }
-
 
 
     //@
@@ -169,7 +164,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -179,10 +174,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

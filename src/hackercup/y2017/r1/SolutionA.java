@@ -26,7 +26,7 @@ public class SolutionA {
                 System.out.printf("Case #%d done!\n", i);
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }

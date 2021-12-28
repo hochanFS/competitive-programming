@@ -11,10 +11,10 @@ import java.io.PrintWriter;
 /**
  * This "Large" problem was one of the most challenging problems I encountered as of May 2019.
  * In short, the problem asks to find the number of the sublist [i ... j], such that
- *      abs(max(c[i], c[i + 1], + ... + c[j]) - max(d[i] + d[i + 1] + ... + d[j])) <= k
+ * abs(max(c[i], c[i + 1], + ... + c[j]) - max(d[i] + d[i + 1] + ... + d[j])) <= k
  * The keys to solving this problem are the following:
  * 1. Dividing the problem as --
- *      #{ALL SUBLIST'S} - #{max(c[i]...) > max(d[i]...) + k} - #{max(c[i]...) < MAX(d[i] ...) - k}
+ * #{ALL SUBLIST'S} - #{max(c[i]...) > max(d[i]...) + k} - #{max(c[i]...) < MAX(d[i] ...) - k}
  * 2. Seeing the # of cases of containing the index i is (i - left + 1) * (right - i + 1)
  * 3. Implementing efficient algorithm for finding Maximum (Minimum) Range Query
  *
@@ -37,8 +37,7 @@ public class Solution {
                 out.println();
             }
             out.close();
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -68,7 +67,7 @@ public class Solution {
 
             count = (C.length + 1L) * C.length / 2L;
 
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -120,14 +119,14 @@ public class Solution {
     }
 
 
-
     /**
      * SegmentTree class
      * This class implements efficient Maximum Range Query algorithm.
      * I found a good source of information here:
-     *      https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+     * https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
      * Memory consumption of O(N)
      * Search time of Max O(ln(N))
+     *
      * @author Hochan Lee
      */
 
@@ -186,7 +185,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -196,10 +195,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

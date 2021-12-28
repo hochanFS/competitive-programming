@@ -10,13 +10,11 @@ public class Solution {
 
     private char[] sequence;
 
-    Solution(String s)
-    {
+    Solution(String s) {
         sequence = s.toCharArray();
     }
 
-    public int getMinimumNumberOfAttempts(int D)
-    {
+    public int getMinimumNumberOfAttempts(int D) {
         int N = sequence.length;
         int[] cPositions = new int[N + 1];
         int count = 0;
@@ -25,7 +23,7 @@ public class Solution {
 
         int j = 0;
         for (int i = 0; i < N; i++) {
-            if (sequence[i] == 'C'){
+            if (sequence[i] == 'C') {
                 cPositions[j++] = i;
                 shoot = 1 << j;
             }
@@ -45,8 +43,7 @@ public class Solution {
         int numChange = 0;
 
         //System.out.println(Arrays.toString(sequence));
-        while(j > 0)
-        {
+        while (j > 0) {
             //System.out.println("Count: " + count);
             --j;
             temp = cPositions[j];
@@ -54,8 +51,7 @@ public class Solution {
             maxShoot = 1 << j;
             //maxShoot >>= 1;
             //System.out.println("MaxShoot: " + maxShoot);
-            if (count - maxShoot * nShootRightToJ > D)
-            {
+            if (count - maxShoot * nShootRightToJ > D) {
                 numChange += nShootRightToJ;
                 count -= maxShoot * nShootRightToJ;
                 cPositions[j] = cPositions[j + 1] - 1;
@@ -64,8 +60,7 @@ public class Solution {
 
             x = (count - D) / maxShoot;
             //System.out.println("x = " + x + ".." + (D >= count - maxShoot * x));
-            if (D >= count - maxShoot * x)
-            {
+            if (D >= count - maxShoot * x) {
                 numChange += x;
                 break;
             }
@@ -84,15 +79,13 @@ public class Solution {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int n = Integer.parseInt(br.readLine());
             String x;
-            while ((x = br.readLine()) != null)
-            {
+            while ((x = br.readLine()) != null) {
                 String[] inputs = x.split("\\p{javaWhitespace}+");
                 defenseAbilities.add(Integer.parseInt(inputs[0]));
                 sequences.add(inputs[1]);
             }
             int sol = 0;
-            for (int i = 0; i < defenseAbilities.size(); i++)
-            {
+            for (int i = 0; i < defenseAbilities.size(); i++) {
                 Solution su = new Solution(sequences.get(i));
                 sol = su.getMinimumNumberOfAttempts(defenseAbilities.get(i));
                 String solution = sol == -1 ? "IMPOSSIBLE" : sol + "";

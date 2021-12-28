@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 /**
  * Intends to solve a problem (#3) for Round 1A in Code Jam Competition.
+ *
  * @author Hochan Lee
  */
 
@@ -70,19 +71,17 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
 
 
     }
 
-    public static class Rectangle
-    {
+    public static class Rectangle {
         double w, h, minCut, maxCut;
-        Rectangle(double W, double H)
-        {
+
+        Rectangle(double W, double H) {
             w = W;
             h = H;
             minCut = 2 * Math.min(w, h);
@@ -108,7 +107,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -118,10 +117,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

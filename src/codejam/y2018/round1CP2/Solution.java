@@ -25,7 +25,7 @@ public class Solution {
                 }
 
                 Demand[] demands = new Demand[N];
-                for (int j = 0; j < N; j ++) {
+                for (int j = 0; j < N; j++) {
                     demands[j] = new Demand(j, N);
                 }
 
@@ -51,7 +51,7 @@ public class Solution {
                     PriorityQueue<Demand> pq = new PriorityQueue<>(wants);
 
                     boolean sold = false;
-                    while (! pq.isEmpty()) {
+                    while (!pq.isEmpty()) {
                         Demand d = pq.poll();
                         if (!d.sold) {
                             out.println(d.id);
@@ -71,8 +71,7 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -81,6 +80,7 @@ public class Solution {
         int id, demand, trials;
         int reflectionPoint;
         boolean sold;
+
         Demand(int id, int N) {
             this.id = id;
             this.demand = 0;
@@ -88,13 +88,16 @@ public class Solution {
             this.trials = 0;
             this.reflectionPoint = N / 11;
         }
+
         public void increment() {
             if (!sold)
                 demand++;
         }
+
         public void sell() {
             this.sold = true;
         }
+
         public void update() {
             this.trials++;
         }
@@ -124,7 +127,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -134,10 +137,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

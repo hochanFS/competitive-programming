@@ -7,8 +7,7 @@ import java.util.Arrays;
 
 public class Solution {
 
-    public static int identifyBadIndex(int[] inputs1, int[] inputs2, int N)
-    {
+    public static int identifyBadIndex(int[] inputs1, int[] inputs2, int N) {
         if (inputs2 == null)
             return -1;
 
@@ -18,16 +17,14 @@ public class Solution {
         if (inputs1[0] < inputs2[0])
             return 1;
 
-        for (int i = 1; i < N / 2; i ++)
-        {
+        for (int i = 1; i < N / 2; i++) {
             if (inputs1[i] > inputs2[i])
                 return i * 2 + 1;
             if (inputs2[i - 1] > inputs1[i])
                 return i * 2;
         }
 
-        if (N % 2 == 1 && inputs1[N / 2 + N % 2] < inputs2[N / 2])
-        {
+        if (N % 2 == 1 && inputs1[N / 2 + N % 2] < inputs2[N / 2]) {
             return N;
         }
 
@@ -44,8 +41,7 @@ public class Solution {
             int[] solutions = new int[n];
             int index = 0;
 
-            while ((line = br.readLine()) != null)
-            {
+            while ((line = br.readLine()) != null) {
                 int N = Integer.parseInt(line);
 
                 int[] inputs1 = new int[N / 2 + N % 2];
@@ -58,19 +54,16 @@ public class Solution {
                 line = br.readLine();
                 String[] items = line.split("\\p{javaWhitespace}+");
 
-                for (int i = 0; i < N; i += 2)
-                {
+                for (int i = 0; i < N; i += 2) {
                     inputs1[i] = Integer.parseInt(items[i]);
                 }
 
-                for (int i = 1; i < N; i += 2)
-                {
+                for (int i = 1; i < N; i += 2) {
                     inputs2[i] = Integer.parseInt(items[i]);
                 }
 
                 solutions[index++] = identifyBadIndex(inputs1, inputs2, N);
             }
-
 
 
         } catch (IOException e) {

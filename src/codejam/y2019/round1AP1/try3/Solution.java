@@ -44,9 +44,9 @@ public class Solution {
         dimension = R * C;
         graph = new GraphPlain(dimension);
         for (int i = 0; i < R; i++) {
-            for (int j = 0; j < C ; j++) {
+            for (int j = 0; j < C; j++) {
                 for (int x = 0; x < R; x++) {
-                    for (int y = 0; y < C; y ++) {
+                    for (int y = 0; y < C; y++) {
                         if (i != x && j != y && i + j != x + y && i - j != x - y) {
                             graph.addDirectedEdge(i * C + j, x * C + y);
                         }
@@ -62,6 +62,7 @@ public class Solution {
 
     public class Coordinate {
         int i;
+
         Coordinate(int i) {
             this.i = i;
         }
@@ -116,12 +117,12 @@ public class Solution {
     }
 
 
-
     /**
      * Graph class built for competitive programming
      * This intends to support graph problems, including non-integer type.
      * For non-integer type, one can use an array's index as the vertex id.
      * This graph does NOT support weights
+     *
      * @author Hochan Lee
      */
     public class GraphPlain {
@@ -170,6 +171,7 @@ public class Solution {
 
         /**
          * For debugging
+         *
          * @return the description of the Graph
          */
         @Override
@@ -198,7 +200,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -208,10 +210,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

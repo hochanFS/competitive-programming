@@ -17,22 +17,22 @@ public class Solution {
         PrintWriter out = new PrintWriter(System.out);
         try {
             int T = in.nextInt();
-            for (int i = 1; i <= T; i++){
+            for (int i = 1; i <= T; i++) {
                 int N = in.nextInt();
                 int L = in.nextInt();
 
                 List<HashSet<Character>> charList = new ArrayList<>();
                 List<List<Character>> lookupList = new ArrayList<>();
-                for (int j = 0; j < L; j ++) {
+                for (int j = 0; j < L; j++) {
                     charList.add(new HashSet<>());
                     lookupList.add(new ArrayList<>());
                 }
 
                 Set<String> strings = new HashSet<>();
-                for (int j = 0; j < N; j ++) {
+                for (int j = 0; j < N; j++) {
                     String s = in.next();
                     strings.add(s);
-                    for (int k = 0; k < L; k ++) {
+                    for (int k = 0; k < L; k++) {
                         if (!charList.get(k).contains(s.charAt(k))) {
                             charList.get(k).add(s.charAt(k));
                             lookupList.get(k).add(s.charAt(k));
@@ -42,7 +42,7 @@ public class Solution {
 
                 long count = 1;
                 long[] sizeArray = new long[L];
-                for (int j = 0; j < L; j ++) {
+                for (int j = 0; j < L; j++) {
                     count *= charList.get(j).size();
                     sizeArray[j] = lookupList.get(j).size();
                 }
@@ -52,15 +52,14 @@ public class Solution {
 
                 if (N >= count) {
                     out.printf("Case #%d: - \n", i);
-                }
-                else {
+                } else {
                     StringBuilder sb;
                     long trial = 0;
 
-                    while(trial <= Math.min(count, 3000)) {
+                    while (trial <= Math.min(count, 3000)) {
                         sb = new StringBuilder();
                         long temp = 1;
-                        for (int j = 0; j < L; j ++) {
+                        for (int j = 0; j < L; j++) {
                             sb.append(lookupList.get(j).get((int) ((trial / temp) % sizeArray[j])));
                             temp *= sizeArray[j];
                         }
@@ -79,8 +78,7 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -96,7 +94,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -106,10 +104,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

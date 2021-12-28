@@ -34,7 +34,7 @@ public class SolutionA {
                 printWriter.printf("Case #%d: %s\n", i, sb.toString().trim());
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -43,7 +43,7 @@ public class SolutionA {
         int netVisit = (int) ((V - 1) % N);
         Set<Integer> solIndices = new TreeSet<>();
         int start = netVisit * K % N;
-        for (int i = 0; i < K; i ++) {
+        for (int i = 0; i < K; i++) {
             solIndices.add((start + i) % N);
         }
         return solIndices;

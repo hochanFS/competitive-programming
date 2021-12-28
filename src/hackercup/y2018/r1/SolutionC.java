@@ -19,7 +19,7 @@ public class SolutionC {
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 String[] dimension = br.readLine().trim().split("\\s+");
                 int N = Integer.parseInt(dimension[0]);
                 int M = Integer.parseInt(dimension[1]);
@@ -28,7 +28,7 @@ public class SolutionC {
             }
 
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -78,8 +78,7 @@ public class SolutionC {
                     first = Math.min(first, p.A);
                     last = Math.max(last, p.B);
                 }
-            }
-            else {
+            } else {
                 for (int k = p.B; k < p.A; k++) {
                     up[k] = Math.min(up[k], p.D);
                     dn[k] = Math.min(dn[k], p.U);
@@ -111,7 +110,7 @@ public class SolutionC {
         double lowerBound = Math.max(heights[first] - x, 0);
         double upperBound = heights[first] + x;
         for (int i = first + 1; i <= last; i++) {
-            lowerBound = Math.max(Math.max(lowerBound - dn[i - 1], heights[i] - x),0);
+            lowerBound = Math.max(Math.max(lowerBound - dn[i - 1], heights[i] - x), 0);
             upperBound = Math.min(upperBound + up[i - 1], heights[i] + x);
             if (lowerBound > upperBound)
                 return false;
@@ -126,6 +125,7 @@ public class SolutionC {
         long D;
         double maxUp;
         double maxDown;
+
         Parkourist(String a, String b, String u, String d) {
             this.A = Integer.parseInt(a);
             this.B = Integer.parseInt(b);

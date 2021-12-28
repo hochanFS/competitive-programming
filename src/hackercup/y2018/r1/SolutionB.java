@@ -11,13 +11,12 @@ import java.util.*;
  * First step is to build the tree.
  * The assumptions that the first node is always the root and the tree is always valid
  * relieves the implementation headache.
- *
+ * <p>
  * One way to solve this problem is simply to list pre-order and post-order traversal.
  * Then, we will be able to observe which nodes should have the same ID.
- *
+ * <p>
  * If there is no way we can have greater than equal to K ID's, we know it is impossible.
  * If we can have more than K, we can simply fill the rest nodes with the same ID.
- *
  */
 
 public class SolutionB {
@@ -30,12 +29,12 @@ public class SolutionB {
             FileWriter fileWriter = new FileWriter(output);
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 String[] settings = br.readLine().trim().split("\\s+");
                 int N = Integer.parseInt(settings[0]);
                 int K = Integer.parseInt(settings[1]);
                 Node[] nodes = new Node[N + 1];
-                for (int j = 1; j <= N; j ++) {
+                for (int j = 1; j <= N; j++) {
                     nodes[j] = new Node(j);
                 }
                 nodes[0] = null;
@@ -56,7 +55,7 @@ public class SolutionB {
                 System.out.printf("Case #%d: \n", i);
                 System.out.println("PreOrder:  " + Arrays.toString(preOrder));
                 System.out.println("PostOrder: " + Arrays.toString(postOrder));
-                
+
                 TreeSet<Integer> indexToReview = new TreeSet<>();
                 Map<Integer, Integer> lookUpPreOrder = new HashMap<>();
                 for (int j = 0; j < N; j++) {
@@ -104,7 +103,7 @@ public class SolutionB {
             }
 
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -147,6 +146,7 @@ public class SolutionB {
         Node left;
         Node right;
         int id;
+
         Node(int id) {
             this.id = id;
             this.left = null;

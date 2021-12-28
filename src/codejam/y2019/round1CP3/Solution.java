@@ -28,8 +28,7 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -50,7 +49,7 @@ public class Solution {
             this.memo = new int[r + 1][r + 1][c + 1][c + 1];
 
             for (int[][][] m1 : memo) {
-                for (int[][] m2: m1) {
+                for (int[][] m2 : m1) {
                     for (int[] m3 : m2) {
                         // initialize the memo to identify whether the memo is updated.
                         // the default value of int (0) cannot be used, since Grundy number can also be 0.
@@ -64,19 +63,21 @@ public class Solution {
             }
         }
 
-        /**public void printGameBoard(PrintWriter out) {
-            for (int r = 0; r < R; r++) {
-                out.println(Arrays.toString(gameBoard[r]));
-            }
-        }*/
+        /**
+         * public void printGameBoard(PrintWriter out) {
+         * for (int r = 0; r < R; r++) {
+         * out.println(Arrays.toString(gameBoard[r]));
+         * }
+         * }
+         */
 
-        private List<Integer> getValidRows(int r1, int r2, int c1 , int c2) {
+        private List<Integer> getValidRows(int r1, int r2, int c1, int c2) {
             List<Integer> validRows = new ArrayList<>();
             for (int row = r1; row <= r2; row++) {
                 boolean valid = true;
                 for (int col = c1; col <= c2; col++) {
                     valid &= gameBoard[row][col] == '.';
-                        //valid = false;
+                    //valid = false;
                 }
                 if (valid) {
                     validRows.add(row);
@@ -85,7 +86,7 @@ public class Solution {
             return validRows;
         }
 
-        private List<Integer> getValidCols(int r1, int r2, int c1 , int c2) {
+        private List<Integer> getValidCols(int r1, int r2, int c1, int c2) {
             List<Integer> validCols = new ArrayList<>();
             for (int col = c1; col <= c2; col++) {
                 boolean valid = true;
@@ -150,7 +151,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -160,10 +161,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

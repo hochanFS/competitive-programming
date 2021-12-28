@@ -8,16 +8,14 @@ import java.util.*;
 
 public class Solution {
 
-    public static int gcd(int a, int b)
-    {
+    public static int gcd(int a, int b) {
         if (a == 0)
             return b;
 
-        return gcd(b%a, a);
+        return gcd(b % a, a);
     }
 
-    public static String decypher(String code, int L)
-    {
+    public static String decypher(String code, int L) {
         String[] inputs = code.split("\\p{javaWhitespace}+");
         BigInteger[] primeMultiplied = new BigInteger[L];
         for (int i = 0; i < L; i++)
@@ -28,8 +26,7 @@ public class Solution {
         int k = 1;
         BigInteger temp;
         BigInteger[] primes = new BigInteger[L + 1];
-        for (int i = 1; i < L; i++)
-        {
+        for (int i = 1; i < L; i++) {
             if (primeMultiplied[i - 1].equals(primeMultiplied[i])) {
                 if (primes[i - 1] != null) {
                     temp = primeMultiplied[i].divide(primes[i - 1]);
@@ -46,10 +43,8 @@ public class Solution {
             primes[i] = temp;
             uniquePrimes.add(temp);
 
-            if (k != -1)
-            {
-                for (int x = i; x >= k; x--)
-                {
+            if (k != -1) {
+                for (int x = i; x >= k; x--) {
                     temp = primeMultiplied[x - 1].divide(primes[x]);
                     primes[x - 1] = temp;
                     uniquePrimes.add(temp);
@@ -67,8 +62,7 @@ public class Solution {
             map.put(bi, c++);
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < L + 1; i++)
-        {
+        for (int i = 0; i < L + 1; i++) {
             sb.append(map.get(primes[i]));
         }
 
@@ -84,16 +78,14 @@ public class Solution {
             BigInteger N;
             int L;
             int i = 1;
-            while ((x = br.readLine()) != null)
-            {
+            while ((x = br.readLine()) != null) {
                 String[] items = x.split("\\p{javaWhitespace}+");
                 L = Integer.parseInt(items[1]);
                 x = br.readLine();
                 solutions[i] = decypher(x, L);
                 i++;
             }
-            for (int j = 1; j < n + 1; j++)
-            {
+            for (int j = 1; j < n + 1; j++) {
                 System.out.println("Case #" + j + ": " + solutions[j]);
             }
             br.close();

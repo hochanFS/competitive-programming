@@ -4,6 +4,7 @@ import java.io.*;
 
 public class SolutionA {
     public static long MAX = 1000000007L;
+
     public static void main(String[] args) {
         String fileName = "src\\hackercup\\y2018\\r1\\inputA.txt";
         try {
@@ -12,7 +13,7 @@ public class SolutionA {
             FileWriter fileWriter = new FileWriter("src\\hackercup\\y2018\\r1\\letitflow.out");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 int N = Integer.parseInt(br.readLine().trim());
                 char[][] ground = new char[3][N];
 
@@ -50,7 +51,7 @@ public class SolutionA {
             }
 
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }

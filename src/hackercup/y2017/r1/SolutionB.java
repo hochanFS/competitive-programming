@@ -26,7 +26,7 @@ public class SolutionB {
                 System.out.printf("Case #%d done!\n", i);
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -89,7 +89,7 @@ public class SolutionB {
                 int innerCount = 0;
                 for (Point anotherZombie : temp) {
                     if (zX <= anotherZombie.X + R && zY <= anotherZombie.Y + R &&
-                    zX >= anotherZombie.X && zY >= anotherZombie.Y) {
+                            zX >= anotherZombie.X && zY >= anotherZombie.Y) {
                         innerCount++;
                     }
                 }
@@ -100,7 +100,7 @@ public class SolutionB {
     }
 
     public int getSolution2() {
-        for (int i = 0; i < N; i ++) {
+        for (int i = 0; i < N; i++) {
             //TODO: add revised code
         }
         return 0;
@@ -109,8 +109,8 @@ public class SolutionB {
     public class Point implements Comparable<Point> {
         long X;
         long Y;
-        public Point(long x, long y)
-        {
+
+        public Point(long x, long y) {
             this.X = x;
             this.Y = y;
         }

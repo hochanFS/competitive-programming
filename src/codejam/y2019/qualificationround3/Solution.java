@@ -24,16 +24,14 @@ public class Solution {
         }
     }
 
-    public static int gcd(int a, int b)
-    {
+    public static int gcd(int a, int b) {
         if (a == 0)
             return b;
 
-        return gcd(b%a, a);
+        return gcd(b % a, a);
     }
 
-    public static String decypherSmall(String code, int L)
-    {
+    public static String decypherSmall(String code, int L) {
         String[] inputs = code.split("\\p{javaWhitespace}+");
         Integer[] primeMultiplied = new Integer[L];
         for (int i = 0; i < L; i++)
@@ -42,8 +40,7 @@ public class Solution {
         Set<Integer> uniquePrimes = new TreeSet<>();
 
         Integer[] primes = new Integer[L + 1];
-        for (int i = 1; i < L; i++)
-        {
+        for (int i = 1; i < L; i++) {
             Integer temp = gcd(primeMultiplied[i - 1], (primeMultiplied[i]));
             if (temp.equals(primeMultiplied[i])) {
                 temp = (int) Math.sqrt((double) temp);
@@ -75,16 +72,14 @@ public class Solution {
         //System.out.println(map); //TODO: comment it out
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < L + 1; i++)
-        {
+        for (int i = 0; i < L + 1; i++) {
             sb.append(map.get(primes[i]));
         }
 
         return sb.toString();
     }
 
-    public static String decypher(String code, int L)
-    {
+    public static String decypher(String code, int L) {
         String[] inputs = code.split("\\p{javaWhitespace}+");
         BigInteger[] primeMultiplied = new BigInteger[L];
         for (int i = 0; i < L; i++)
@@ -93,8 +88,7 @@ public class Solution {
         Set<BigInteger> uniquePrimes = new TreeSet<>();
 
         BigInteger[] primes = new BigInteger[L + 1];
-        for (int i = 1; i < L; i++)
-        {
+        for (int i = 1; i < L; i++) {
             BigInteger temp = primeMultiplied[i - 1].gcd(primeMultiplied[i]);
             if (temp.equals(primeMultiplied[i])) {
                 temp = sqrt(temp);
@@ -119,8 +113,7 @@ public class Solution {
         //System.out.println(map); //TODO: comment it out
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < L + 1; i++)
-        {
+        for (int i = 0; i < L + 1; i++) {
             sb.append(map.get(primes[i]));
         }
 
@@ -137,8 +130,7 @@ public class Solution {
             BigInteger N;
             int L;
             int i = 1;
-            while ((x = br.readLine()) != null)
-            {
+            while ((x = br.readLine()) != null) {
                 String[] items = x.split("\\p{javaWhitespace}+");
                 //System.out.println(items[0]);
                 N = new BigInteger(items[0]);
@@ -150,8 +142,7 @@ public class Solution {
                     solutions[i] = decypher(x, L);
                 i++;
             }
-            for (int j = 1; j < n + 1; j++)
-            {
+            for (int j = 1; j < n + 1; j++) {
                 System.out.println("Case #" + j + ": " + solutions[j]);
             }
             br.close();

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class SolutionB {
     public static int MAX_U = 100000;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
@@ -15,8 +16,7 @@ public class SolutionB {
 
     }
 
-    public static int getLargestPossibleStreak(int n, int[] input)
-    {
+    public static int getLargestPossibleStreak(int n, int[] input) {
         if (n <= 3)
             return n;
         int[] numOfU = new int[MAX_U + 1];

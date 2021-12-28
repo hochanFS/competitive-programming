@@ -24,7 +24,7 @@ public class Solution {
         PrintWriter out = new PrintWriter(System.out);
         try {
             int T = in.nextInt();
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 int N = in.nextInt();
                 int L = in.nextInt();
                 ArrayList<Integer> languageChoices = new ArrayList<>();
@@ -46,8 +46,7 @@ public class Solution {
             out.close();
 
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -67,13 +66,13 @@ public class Solution {
         if (100 % N == 0)
             return 100;
 
-        long incrementByOne = Math.round(1.0/N_D * 100.0);
+        long incrementByOne = Math.round(1.0 / N_D * 100.0);
         long count = 0;
 
         if (isOptimized(1)) {
 
             for (int i = 0; i < lc.size(); i++) {
-                count += Math.round(lc.get(i)/N_D * 100.0);
+                count += Math.round(lc.get(i) / N_D * 100.0);
             }
             return count + incrementByOne * (N - surveyed);
         }
@@ -171,7 +170,7 @@ public class Solution {
         }
 
         if (Math.round(temp) < temp) {
-            while(input2 + p < N && exceed > N) {
+            while (input2 + p < N && exceed > N) {
                 temp = ((input2 + p) / N_D * 100.0);
                 if (Math.round(temp) >= temp) {
                     map.put(input2, p);
@@ -181,7 +180,7 @@ public class Solution {
             }
         }
 
-        while(input2 + p < N && exceed > N) {
+        while (input2 + p < N && exceed > N) {
             temp = ((input2 + p) / N_D * 100.0);
             if (Math.round(temp) > temp) {
                 break;
@@ -208,7 +207,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -218,10 +217,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

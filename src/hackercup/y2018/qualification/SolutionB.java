@@ -29,7 +29,7 @@ public class SolutionB {
                     printWriter.println(0.0);
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }

@@ -3,8 +3,7 @@ package codejam.y2019.round1AP1;
 import java.io.*;
 import java.util.*;
 
-public class Solution
-{
+public class Solution {
     private List<Integer>[] adj;
     private int dimension;
     private int CC;
@@ -46,11 +45,11 @@ public class Solution
         dimension = R * C;
         adj = (ArrayList<Integer>[]) new ArrayList[dimension];
         rand = new Random();
-        for (int i = 0; i < R; i ++) {
-            for (int j = 0; j < C ; j++) {
+        for (int i = 0; i < R; i++) {
+            for (int j = 0; j < C; j++) {
                 adj[i * C + j] = new ArrayList<>();
-                for (int k = 0; k < R; k ++) {
-                    for (int l = 0; l < C; l ++) {
+                for (int k = 0; k < R; k++) {
+                    for (int l = 0; l < C; l++) {
                         if (i != k && j != l && i - j != k - l && i + j != k + l)
                             adj[i * C + j].add(k * C + l);
                     }
@@ -59,7 +58,7 @@ public class Solution
             }
         }
 
-        for (int i = 0; i < R; i ++) {
+        for (int i = 0; i < R; i++) {
             for (int j = 0; j < C; j++)
                 System.out.println(adj[i * C + j]);
         }
@@ -106,7 +105,7 @@ public class Solution
                 attempt(x, count + 1);
                 if (coordinates.size() == dimension)
                     return;
-                coordinates.remove(count+1);
+                coordinates.remove(count + 1);
                 visited[x] = false;
             }
         }
@@ -125,6 +124,7 @@ public class Solution
     public class Coordinate {
         int r;
         int c;
+
         Coordinate(int i) {
             r = i / CC + 1;
             c = i % CC + 1;
@@ -147,7 +147,7 @@ public class Solution
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -157,10 +157,12 @@ public class Solution
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

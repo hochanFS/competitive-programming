@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round2/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackercup/y2020/round2/B.java" afterDir="false" />
+    <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="Solved CodeJam y2021.q1">
+      <change afterPath="$PROJECT_DIR$/src/IteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codejam/y2021/qualification/n1/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coursera/week1/MaxPairwiseProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coursera/week1/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codeforces/round558d2/SolutionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeforces/round558d2/SolutionB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codeforces/round558d2/SolutionC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codeforces/round558d2/SolutionC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/qualificationround1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/qualificationround1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/qualificationround2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/qualificationround2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1A1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1A1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1A2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1A2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1AC/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1AC/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1BP1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1BP1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1BP3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1BP3/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1CP1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1CP1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1CP2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1CP2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2018/round1CP3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2018/round1CP3/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/qualificationround1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/qualificationround1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/qualificationround2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/qualificationround2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/qualificationround3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/qualificationround3/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/qualificationround3/trial2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/qualificationround3/trial2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1AP1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1AP1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1AP1/Try2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1AP1/Try2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1AP1/try3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1AP1/try3/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1AP2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1AP2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1AP2/Try2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1AP2/Try2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1AP4/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1AP4/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1BP1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1BP1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1BP2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1BP2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1BP3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1BP3/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1BP3/try2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1BP3/try2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1BP5/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1BP5/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1CP1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1CP1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1CP2/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1CP2/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2019/round1CP3/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2019/round1CP3/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/BigSampleWriterA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/BigSampleWriterA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2017/r1/SolutionC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2018/qualification/SolutionA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2018/qualification/SolutionA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2018/qualification/SolutionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2018/qualification/SolutionB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2018/r1/SolutionD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackercup/y2019/qualification/SolutionD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,46 +86,7 @@
       <recent name="C:\competitiveProgramming\competitiveProgramming\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.B (1)">
-    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round2.A" />
-      <module name="competitiveProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hackercup.y2020.round2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="A2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.A2" />
-      <module name="competitiveProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hackercup.y2020.round1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="A3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.A3" />
-      <module name="competitiveProgramming" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hackercup.y2020.round1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="B (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round2.B" />
       <module name="competitiveProgramming" />
@@ -93,12 +100,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hackercup.y2020.round1.B" />
+    <configuration name="IteratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IteratorTest" />
+      <module name="competitiveProgramming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxPairwiseProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coursera.week1.MaxPairwiseProduct" />
       <module name="competitiveProgramming" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hackercup.y2020.round1.*" />
+          <option name="PATTERN" value="coursera.week1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coursera.week1.MaxProduct" />
+      <module name="competitiveProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coursera.week1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codejam.y2021.qualification.n1.Solution" />
+      <module name="competitiveProgramming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codejam.y2021.qualification.n1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,19 +147,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.A2" />
-      <item itemvalue="Application.A3" />
-      <item itemvalue="Application.B" />
-      <item itemvalue="Application.A" />
       <item itemvalue="Application.B (1)" />
+      <item itemvalue="Application.IteratorTest" />
+      <item itemvalue="Application.MaxPairwiseProduct" />
+      <item itemvalue="Application.MaxProduct" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.MaxPairwiseProduct" />
+        <item itemvalue="Application.MaxProduct" />
+        <item itemvalue="Application.IteratorTest" />
         <item itemvalue="Application.B (1)" />
-        <item itemvalue="Application.B" />
-        <item itemvalue="Application.A" />
-        <item itemvalue="Application.A3" />
-        <item itemvalue="Application.A2" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597608813332</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Edited round2.B">
+      <created>1598797893982</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598797893982</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,55 +257,31 @@
     <MESSAGE value="2nd Attempt on codejam\y2020\round1a\b" />
     <MESSAGE value="Merged" />
     <MESSAGE value="Hackercup 2020 solution. A3 is wrong." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hackercup 2020 solution. A3 is wrong." />
+    <MESSAGE value="Edited round2.B" />
+    <MESSAGE value="Solved CodeJam y2021.q1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved CodeJam y2021.q1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1725" y="416" key="#com.intellij.ide.util.MemberChooser" timestamp="1597586412619">
+    <state x="1554" y="294" key="CommitChangelistDialog2" timestamp="1640724247486">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1725" y="416" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1597586412619" />
-    <state x="1716" y="585" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598722649236">
+    <state x="1554" y="294" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1640724247486" />
+    <state width="1236" height="291" key="GridCell.Tab.0.bottom" timestamp="1640724248878">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1716" y="585" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400@0.0.2560.1400" timestamp="1598722649236" />
-    <state x="805" y="153" key="CommitChangelistDialog2" timestamp="1597608812710">
+    <state width="1236" height="291" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1640724248878" />
+    <state width="1236" height="291" key="GridCell.Tab.0.center" timestamp="1640724248878">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="604" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891298380" />
-    <state x="805" y="153" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1597608812710" />
-    <state x="987" y="370" key="FileChooserDialogImpl" timestamp="1597725211130">
+    <state width="1236" height="291" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1640724248878" />
+    <state width="1236" height="291" key="GridCell.Tab.0.left" timestamp="1640724248878">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="370" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1597725211130" />
-    <state width="2517" height="294" key="GridCell.Tab.0.bottom" timestamp="1598730956679">
+    <state width="1236" height="291" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1640724248878" />
+    <state width="1236" height="291" key="GridCell.Tab.0.right" timestamp="1640724248878">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="294" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
-    <state width="2517" height="294" key="GridCell.Tab.0.center" timestamp="1598730956679">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="294" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
-    <state width="2517" height="294" key="GridCell.Tab.0.left" timestamp="1598730956679">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="294" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
-    <state width="2517" height="294" key="GridCell.Tab.0.right" timestamp="1598730956679">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="294" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1598730956679" />
-    <state x="736" y="341" key="Vcs.Push.Dialog.v2" timestamp="1597608814758">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595891299881" />
-    <state x="736" y="341" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1597608814758" />
-    <state x="875" y="463" key="com.intellij.ide.util.TipDialog" timestamp="1598797820470">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="875" y="463" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1598797820470" />
-    <state x="1583" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1598725067726">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1583" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1598725067726" />
+    <state width="1236" height="291" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1640724248878" />
   </component>
   <component name="masterDetails">
     <states>

@@ -7,11 +7,11 @@ import java.util.Arrays;
 
 /**
  * Intends to solve a problem (#1) for Round 1A in Code Jam Competition.
+ *
  * @author: hochanlee
  */
 
-public class Solution
-{
+public class Solution {
     private int R;
     private int C;
     private byte[][] matrix;
@@ -24,8 +24,7 @@ public class Solution
     private int[] cumColSum;
 
     // constructor
-    public Solution(int R, int C, int H, int V, BufferedReader br)
-    {
+    public Solution(int R, int C, int H, int V, BufferedReader br) {
         matrix = new byte[R][C]; // used byte matrix to reduce memory
         this.R = R;
         this.C = C;
@@ -66,18 +65,15 @@ public class Solution
                     perfMatrix[i * this.C + j] = matrix[i][j];
                 }
             }
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
 
     public int countChocolate(int startRow, int endRow, int startCol, int endCol) {
         int count = 0;
-        for (int i = startRow; i < endRow; i ++)
-        {
-            for (int j = startCol; j < endCol; j++)
-            {
+        for (int i = startRow; i < endRow; i++) {
+            for (int j = startCol; j < endCol; j++) {
                 if (perfMatrix[i * C + j] == (byte) 1)
                     count++;
             }
@@ -85,8 +81,7 @@ public class Solution
         return count;
     }
 
-    public boolean isDivisible()
-    {
+    public boolean isDivisible() {
         if (nChocolate == 0)
             return true;
 
@@ -101,8 +96,7 @@ public class Solution
         int numColChoco = nChocolate / (V + 1);
         int individualChoclate = numColChoco / (H + 1);
 
-        for (int i = 0; i < R + 1; i++)
-        {
+        for (int i = 0; i < R + 1; i++) {
             if (cumRowSum[i] - cumRowSum[rowCuts[currentR - 1]] > numRowChoco)
                 return false;
             if (cumRowSum[i] - cumRowSum[rowCuts[currentR - 1]] == numRowChoco)
@@ -110,18 +104,15 @@ public class Solution
         }
 
 
-        for (int i = 0; i < C + 1; i++)
-        {
+        for (int i = 0; i < C + 1; i++) {
             if (cumColSum[i] - cumColSum[colCuts[currentC - 1]] > numColChoco)
                 return false;
             if (cumColSum[i] - cumColSum[colCuts[currentC - 1]] == numColChoco)
                 colCuts[currentC++] = i;
         }
 
-        for (int i = 0; i <= H; i++)
-        {
-            for (int j = 0; j <= V; j++)
-            {
+        for (int i = 0; i <= H; i++) {
+            for (int j = 0; j <= V; j++) {
                 if (countChocolate(rowCuts[i], rowCuts[i + 1], colCuts[j], colCuts[j + 1]) != individualChoclate)
                     return false;
             }
@@ -144,16 +135,14 @@ public class Solution
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             int T = Integer.parseInt(br.readLine());
             Solution[] mySolutions = new Solution[T + 1];
-            for (int i = 1; i <= T ; i++)
-            {
+            for (int i = 1; i <= T; i++) {
                 String line = br.readLine();
                 String[] items = line.split("\\p{javaWhitespace}+");
-                                mySolutions[i] = new Solution(Integer.parseInt(items[0]), Integer.parseInt(items[1]), Integer.parseInt(items[2]), Integer.parseInt(items[3]), br);
+                mySolutions[i] = new Solution(Integer.parseInt(items[0]), Integer.parseInt(items[1]), Integer.parseInt(items[2]), Integer.parseInt(items[3]), br);
 
             }
 
-            for (int i = 1; i <= T; i++)
-            {
+            for (int i = 1; i <= T; i++) {
                 String solPrint;
                 if (mySolutions[i].isDivisible())
                     solPrint = "POSSIBLE";

@@ -35,7 +35,7 @@ public class BigSampleWriterA {
                 }
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }

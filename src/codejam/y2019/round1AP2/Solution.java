@@ -36,14 +36,14 @@ public class Solution {
             //out.printf("Case #%d: %.6f\n", i, sumInitArea + memoize[N][constraint]);
             //out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
 
     public static class Coordinate {
         int x, y;
+
         Coordinate(int a, int b) {
             x = a;
             y = b;
@@ -64,7 +64,7 @@ public class Solution {
         marked = new boolean[r][c];
         edges = new ArrayList<>();
         starting = new ArrayList<>();
-        for (int i = 0; i < r; i ++) {
+        for (int i = 0; i < r; i++) {
             for (int j = 0; j < c; j++) {
                 edges.set(i * c + r, buildEdge(i, j));
                 starting.set(i * c + r, new Coordinate(i, j));
@@ -76,8 +76,7 @@ public class Solution {
     private Set<Coordinate> buildEdge(int x, int y) {
 
         Set<Coordinate> temp = new HashSet<>();
-        for (int i = 0; i < R; i++)
-        {
+        for (int i = 0; i < R; i++) {
             if (i != x) {
                 for (int j = 0; j < C; j++) {
                     if (j != y && Math.abs(x - y) != Math.abs(i - j)) {
@@ -123,7 +122,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -133,10 +132,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

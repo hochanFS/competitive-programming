@@ -32,13 +32,12 @@ public class Solution {
                     long weight = weights[j];
                     numAnts[j] = numAnts[j - 1];
                     cumWeights[j][1] = Math.min(cumWeights[j - 1][1], weight);
-                    for (int k = 1; k <= numAnts[j - 1] ; k++) {
+                    for (int k = 1; k <= numAnts[j - 1]; k++) {
                         if (weight * 6 >= cumWeights[j - 1][k]) {
                             if (k == numAnts[j - 1]) {
                                 numAnts[j]++;
                                 cumWeights[j][k + 1] = cumWeights[j - 1][k] + weight;
-                            }
-                            else {
+                            } else {
                                 cumWeights[j][k + 1] = Math.min(cumWeights[j - 1][k] + weight, cumWeights[j - 1][k + 1]);
                             }
                         }
@@ -59,8 +58,7 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -76,7 +74,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -86,10 +84,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

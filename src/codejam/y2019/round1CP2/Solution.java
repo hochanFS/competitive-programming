@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 
 /**
  * TODO: WRONG ANSWER. CORRECT THE SOLUTION
+ *
  * @author Hochan Lee
  */
 
@@ -26,7 +27,7 @@ public class Solution {
                 boolean[] skip = new boolean[119];
                 StringBuilder sb = new StringBuilder();
                 if (F == 475) {
-                    for (int k = 0; k < 5; k ++) {
+                    for (int k = 0; k < 5; k++) {
                         Arrays.fill(letterCount, 0);
                         for (int j = 0; j < 119; j++) {
                             if (!skip[j]) {
@@ -74,8 +75,7 @@ public class Solution {
                     if (verdict == -1) {
                         throw new RuntimeException();
                     }
-                }
-                else {
+                } else {
                     out.println(1);
                     out.flush();
                     out.println("ABCDE");
@@ -88,8 +88,7 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -105,7 +104,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -115,10 +114,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

@@ -32,7 +32,7 @@ public class Solution {
                 List<String> stringList = new LinkedList<>();
                 Set<Character> charList = new HashSet<>();
 
-                for (String s: strings) {
+                for (String s : strings) {
                     charList.add(s.charAt(0));
                     StringBuilder sb = new StringBuilder(s);
                     while (sb.length() < 500) {
@@ -107,16 +107,14 @@ public class Solution {
 
                 if (!solvable) {
                     out.printf("Case #%d: IMPOSSIBLE\n", i);
-                }
-                else {
+                } else {
                     out.printf("Case #%d: ", i);
                     out.println(sb.toString());
                 }
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -149,7 +147,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -159,10 +157,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

@@ -29,7 +29,7 @@ public class Solution {
                 int[] N = new int[Q + 1];
                 List<Integer> row = new ArrayList<>(Q + 1);
                 List<Integer> col = new ArrayList<>(Q + 1);
-                for (int j = 0; j < P; j ++) {
+                for (int j = 0; j < P; j++) {
                     int x = in.nextInt();
                     int y = in.nextInt();
                     String D = in.next();
@@ -79,8 +79,7 @@ public class Solution {
             }
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -96,7 +95,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -106,10 +105,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

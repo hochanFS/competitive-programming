@@ -55,7 +55,7 @@ public class SolutionC {
         }
     }
 
-    public static class Line implements Comparable<Line>{
+    public static class Line implements Comparable<Line> {
         public int a;
         public int b;
         public int c;
@@ -68,13 +68,11 @@ public class SolutionC {
                 if (a == 0) {
                     b = 1;
                     c = c1.y;
-                }
-                else {
+                } else {
                     a = 1;
                     c = c1.x;
                 }
-            }
-            else {
+            } else {
                 int gcd = gcd(a, gcd(b, c));
                 a /= gcd;
                 b /= gcd;
@@ -83,8 +81,7 @@ public class SolutionC {
                     a *= -1;
                     b *= -1;
                     c *= -1;
-                }
-                else if (a == 0 && b < 0) {
+                } else if (a == 0 && b < 0) {
                     b *= -1;
                     c *= -1;
                 }
@@ -114,8 +111,7 @@ public class SolutionC {
             return false;
         }
 
-        public int gcd(int a, int b)
-        {
+        public int gcd(int a, int b) {
             if (a == 0)
                 return b;
             return gcd(b % a, a);

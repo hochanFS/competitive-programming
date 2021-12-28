@@ -29,7 +29,7 @@ public class Solution {
             int T = in.nextInt();
             int N = in.nextInt();
             int M = in.nextInt();
-            for (int i = 1; i <= T; i ++) {
+            for (int i = 1; i <= T; i++) {
 
                 int[] feedback = new int[7];
                 //int min = 0;
@@ -53,12 +53,10 @@ public class Solution {
 
             out.close();
 
-        }
-        catch (IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
-
 
 
     public static String repeat(int i, int k) {
@@ -66,7 +64,7 @@ public class Solution {
         for (int j = 0; j < k; j++) {
             sb.append(i).append(' ');
         }
-        sb.setLength(sb.length()-1);
+        sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 
@@ -96,7 +94,7 @@ public class Solution {
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -106,10 +104,12 @@ public class Solution {
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

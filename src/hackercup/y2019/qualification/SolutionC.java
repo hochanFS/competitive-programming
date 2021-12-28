@@ -7,29 +7,28 @@ import java.io.*;
  */
 
 /**
- *
  * The whole expression E is either a single literal (Case 1),
  * or a binary operator wrapped by a parentheses (Case 2)
- *
+ * <p>
  * Case 1:
  * If the whole expression E is literal (0, 1, x, X), 1 change is required iff it is X or x.
- *
+ * <p>
  * Case 2:
  * Let us assume we have calculated all the expressions of inner parentheses except the very last one.
  * Thus, now only two expressions and operator remain within the parentheses.
- *
+ * <p>
  * Each of the two expressions may be:
  * >> 1: always true regardless of x
  * >> 0: always false regardless of x
  * >> x: always equal to the value of x
  * >> X: always the negate of the value of x
- *
+ * <p>
  * In order to render the final expression independent of the value of x,
  * we still need at most 1 alterations to make: to the operator that joins the final two expressions!
- *
+ * <p>
  * To see this, observe that there are 8 combinations that involve at least one variable.
  * (If it does not involve variable, it is already determined.)
- *
+ * <p>
  * x (op) x >> replace the final op as ^ -> always false
  * x (op) X >> replace the final op as ^ -> always true
  * x (op) 1 >> replace the final op as | -> always true
@@ -38,12 +37,12 @@ import java.io.*;
  * X (op) X >> replace the final op as ^ -> always false
  * X (op) 1 >> replace the final op as | -> always true
  * X (op) 0 >> replace the final op as & -> always false
- *
+ * <p>
  * We then just need to be able to check whether the boolean expression value depends on x.
  * Note: if the expression result when x is true == the expression result when x is false,
  * it is independent.
  * If not, it is dependent.
- *
+ * <p>
  * To evaluate the boolean expression, I included BooleanEvaluator class, which evaluates
  * the boolean expression by repeatedly calling literal() and expression() functions.
  */
@@ -57,7 +56,7 @@ public class SolutionC {
             FileWriter fileWriter = new FileWriter("src\\hackercup\\y2019\\qualification\\solutionC.txt"); // renamed
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 char[] tokens = br.readLine().trim().toCharArray();
                 BooleanEvaluator evaluatorIfTrue = new BooleanEvaluator(tokens, true);
                 BooleanEvaluator evaluatorIfFalse = new BooleanEvaluator(tokens, false);
@@ -69,7 +68,7 @@ public class SolutionC {
             }
 
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -91,9 +90,8 @@ public class SolutionC {
         }
 
         private boolean literal() throws RuntimeException {
-            switch(tokens[index++]) {
-                case '(':
-                {
+            switch (tokens[index++]) {
+                case '(': {
                     boolean b = expression();
                     if (tokens[index++] != ')')
                         throw new RuntimeException("')' expected at position " + index + " got: " + tokens[index - 1]);

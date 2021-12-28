@@ -3,8 +3,7 @@ package codejam.y2019.round1AP1.Try2;
 import java.io.*;
 import java.util.*;
 
-public class Solution
-{
+public class Solution {
     public static void main(String[] args) {
         In in = new In(System.in);
         PrintWriter out = new PrintWriter(System.out);
@@ -34,7 +33,7 @@ public class Solution
         for (int i = 0; i < lines.length; i++) {
             sb = new StringBuilder();
             String temp = lines[i];
-            for (int j = temp.length() -1; j >= 0; j--) {
+            for (int j = temp.length() - 1; j >= 0; j--) {
                 sb.append(temp.charAt(j));
             }
             reversedLines.add(sb.toString());
@@ -87,7 +86,6 @@ public class Solution
         }
 
 
-
         return count;
     }
 
@@ -101,7 +99,6 @@ public class Solution
     };
 
 
-
     //@
     static class In {
         BufferedReader br;
@@ -113,7 +110,7 @@ public class Solution
         }
 
         public String next() throws IOException {
-            if(st.hasMoreTokens())
+            if (st.hasMoreTokens())
                 return st.nextToken();
             else
                 st = new StringTokenizer(br.readLine());
@@ -123,10 +120,12 @@ public class Solution
         public int nextInt() throws IOException {
             return Integer.parseInt(next());
         }
+
         //#
         public long nextLong() throws IOException {
             return Long.parseLong(next());
         }
+
         public double nextDouble() throws IOException {
             return Double.parseDouble(next());
         }

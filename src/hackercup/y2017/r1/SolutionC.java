@@ -27,7 +27,7 @@ public class SolutionC {
                 System.out.printf("Case #%d done!\n", i);
             }
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
@@ -39,7 +39,7 @@ public class SolutionC {
     private int K;
 
 
-    public SolutionC(int N, int M, int K, BufferedReader br) throws IOException{
+    public SolutionC(int N, int M, int K, BufferedReader br) throws IOException {
         this.graph = new Graph(N, M);
         this.deliveries = new Delivery[K];
         this.K = K;
@@ -51,11 +51,11 @@ public class SolutionC {
             graph.addEdge(v1 - 1, v2 - 1, weight);
         }
         graph.calculateShortestPaths();
-        for (int i = 0; i < K ; i++) {
+        for (int i = 0; i < K; i++) {
             String[] deliveryInfo = br.readLine().trim().split("\\s+");
             int from = Integer.parseInt(deliveryInfo[0]);
             int to = Integer.parseInt(deliveryInfo[1]);
-            deliveries[i] = new Delivery(from  - 1, to - 1);
+            deliveries[i] = new Delivery(from - 1, to - 1);
         }
         distances = new long[2 * K][2];
         at = new int[2 * K][2];
@@ -73,8 +73,7 @@ public class SolutionC {
             distances[0][1] = distances[0][0];
             at[0][0] = deliveries[0].S;
             at[0][1] = at[0][0];
-        }
-        else {
+        } else {
             return -1;
         }
         int to0 = 0;
@@ -153,7 +152,7 @@ public class SolutionC {
                 for (int j : edges.get(i))
                     queue.addLast(j);
                 visited[i] = true;
-                while (! queue.isEmpty()) {
+                while (!queue.isEmpty()) {
                     int v1 = queue.removeFirst();
                     if (visited[v1])
                         continue;
@@ -181,7 +180,7 @@ public class SolutionC {
 
         void print() {
             // for debugging
-            for (int i = 0; i < V; i ++) {
+            for (int i = 0; i < V; i++) {
                 System.out.println(Arrays.toString(dist[i]));
             }
         }
@@ -190,16 +189,18 @@ public class SolutionC {
     public class Delivery {
         int S;
         int D;
+
         Delivery(int S, int D) {
             this.S = S;
             this.D = D;
         }
     }
 
-    public class Edge implements Comparable<Edge>{
+    public class Edge implements Comparable<Edge> {
         int v1;
         int v2;
         long weight;
+
         Edge(int v1, int v2, long weight) {
             this.v1 = v1;
             this.v2 = v2;

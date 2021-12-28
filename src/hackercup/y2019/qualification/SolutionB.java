@@ -13,7 +13,7 @@ import java.io.*;
  * In case A cannot reach the rightmost lilypad only with jumps to the right, we should consider
  * how jumps to the left can help A achieve its goal.
  * Consider the following case:
- *
+ * <p>
  * >> ABB... // emptyCount = 3, betaCount = 2
  * >> AB.B..
  * >> .BAB..
@@ -23,9 +23,9 @@ import java.io.*;
  * >> .AB.B.
  * >> ..BAB.
  * >> ..B.BA // success!
- *
+ * <p>
  * Or,
- *
+ * <p>
  * >> ABBB.... // emptyCount = 4, betaCount = 3
  * >> AB.B.B..
  * >> .B.B.BA.
@@ -33,7 +33,7 @@ import java.io.*;
  * >> ..ABBB..
  * >> ..ABB.B.
  * >> ...BB.BA // success!
- *
+ * <p>
  * As shown above, given A's position at x and number of B's b, A can first jump up to A + 2 * b,
  * then jump back to the left to A - b - 1, and then jump again to the right by A + 2 * b.
  * So, as long as B >= 2, and there is at least one empty lilypad (emptyCount >= 1), A can reach anywhere!
@@ -48,13 +48,13 @@ public class SolutionB {
             FileWriter fileWriter = new FileWriter("src\\hackercup\\y2019\\qualification\\solutionB.txt"); //renamed
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 char[] ponds = br.readLine().trim().toCharArray(); // read the pond state for each day
                 int N = ponds.length;
                 boolean canReach = false; // tracks whether reaching to the right is at all possible
                 int betaCount = 0;
                 int emptyCount = 0;
-                for (int j = 1; j < N; j ++) { // constraint: N >= 2 for all cases
+                for (int j = 1; j < N; j++) { // constraint: N >= 2 for all cases
                     if (ponds[j] == '.') {
                         emptyCount++;
                         continue;
@@ -67,8 +67,7 @@ public class SolutionB {
                 }
                 if (emptyCount != 0 && (betaCount >= 2 || betaCount >= emptyCount)) {
                     canReach = true;
-                }
-                else {
+                } else {
                     canReach = false;
                 }
                 String solution = canReach ? "Y" : "N";
@@ -77,7 +76,7 @@ public class SolutionB {
             }
 
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }

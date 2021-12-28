@@ -24,13 +24,13 @@ public class SolutionA {
             FileWriter fileWriter = new FileWriter("src\\hackercup\\y2019\\qualification\\solutionA.txt"); //renamed
             PrintWriter printWriter = new PrintWriter(fileWriter);
             int T = Integer.parseInt(br.readLine().trim());
-            for (int i = 1; i <= T ; i++) {
+            for (int i = 1; i <= T; i++) {
                 char[] ponds = br.readLine().trim().toCharArray(); // read the pond state for each day
                 int N = ponds.length;
                 boolean canReach = false; // tracks whether reaching to the right is at all possible
                 int betaCount = 0;
                 int emptyCount = 0;
-                for (int j = 1; j < N; j ++) { // constraint: N >= 2 for all cases
+                for (int j = 1; j < N; j++) { // constraint: N >= 2 for all cases
                     if (ponds[j] == '.') {
                         emptyCount++;
                         continue;
@@ -50,7 +50,7 @@ public class SolutionA {
             }
 
             printWriter.close();
-        } catch(IOException ie) {
+        } catch (IOException ie) {
             ie.printStackTrace();
         }
     }
