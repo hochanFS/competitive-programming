@@ -1,7 +1,6 @@
 package codejam.y2021.qualification.n4;
 
 import java.io.*;
-import java.util.*;
 import java.util.StringTokenizer;
 
 public class Solution {
@@ -13,65 +12,35 @@ public class Solution {
             int T = in.nextInt();
             int N = in.nextInt();
             int Q = in.nextInt();
-            List<Integer> list = new ArrayList<>();
-            for (int i = 1; i <= N; i++) {
-                list.add(i);
-            }
 
             for (int i = 1; i <= T; i++) {
-//                List<Integer> values = new ArrayList<>();
-                int[] values = new int[3];
-                int idx = ask(1, 2, 3, out, in);
-                if (idx == 1) values = new int[] {2, 1, 3};
-                else if (idx == 2) values = new int[] {1, 2, 3};
-                else values = new int[] {1, 3, 2};
+                int[] values = new int[]{0, 1};
 
+                for (int j = 2; j < N; j++) {
 
-                for (int j = 4; j <= N; j++) {
+                    int s = 0, e = values.length + 1;
 
-                    int l = -1, r = values.length;
+                    while (s + 1 < e) {
+                        int m1 = (s + s + e) / 3, m2 = (s + e + e) / 3;
+                        if (m1 == 0) m1++;
+                        while(m2 <= m1) m2++;
 
-                    int m1 = (r - l) / 3 + l, m2 = ((r - l) / 3) * 2 + l;
-                    if ((r - l) % 3 == 2)
-                        m2 += 1;
-                    int a1 = values[m1], a2 = values[m2];
-                    while (r - l > 1) {
-                        int q = ask(a1, a2, j, out, in);
-                        if (q == a1) r = m1;
-                        else if (q == a2) l = m2;
-                        else {
-                            l = m1;
-                            r = m2;
+                        int res = ask(j, values[m1 - 1], values[m2 - 1], out, in);
+                        if (res == j) {
+                            s = Math.max(s, m1);
+                            e = Math.min(e, m2);
+                        } else if (res == values[m1 - 1]) {
+                            e = Math.min(e, m1);
+                        } else if (res == values[m2 - 1]) {
+                            s = Math.max(m2, s);
                         }
-
-                        m1 = (r - l) / 3 + l;
-                        m2 = ((r - l) / 3) * 2 + l;
-
-                        if ((r - l) % 3 == 2)
-                            m2++;
-
-                        if (r - l <= 1) break;
-
-                        if (r - l == 2) {
-                            if (l > -1) {
-                                m1 = r - 2;
-                                m2 = r - 1;
-                                l = r - 3;
-                            } else {
-                                m1 = l + 1;
-                                m2 = l + 2;
-                                r = l + 3;
-                            }
-                        }
-
-                        a1 = values[m1];
-                        a2 = values[m2];
                     }
-                    values = insert(values, l + 1, j);
+
+                    values = insert(values, s, j);
                 }
                 for (int j = 0; j < N - 1; j++)
-                    out.printf("%d ", values[j]);
-                out.printf("%d\n", values[N - 1]);
+                    out.printf("%d ", values[j] + 1);
+                out.printf("%d\n", values[N - 1] + 1);
                 out.flush();
 
                 int result = in.nextInt();
@@ -87,9 +56,9 @@ public class Solution {
     }
 
     private static int ask(int i, int j, int k, PrintWriter out, In in) throws IOException {
-        out.printf("%d %d %d\n", i, j, k);
+        out.printf("%d %d %d\n", i + 1, j + 1, k + 1);
         out.flush();
-        return in.nextInt();
+        return in.nextInt() - 1;
     }
 
     private static int[] insert(int[] arr, int idx, int val) {
@@ -104,6 +73,7 @@ public class Solution {
             if (i == idx) ret[i++] = val;
             ret[i++] = value;
         }
+
         return ret;
     }
 

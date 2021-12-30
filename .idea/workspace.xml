@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="Solved CodeJam y2021.q1">
-      <change afterPath="$PROJECT_DIR$/src/codejam/y2021/qualification/n4/Solution.java" afterDir="false" />
+    <list default="true" id="6d64efcd-e317-48a1-a7c6-e3430a378f6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2021/qualification/n3/Solution$In.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2021/qualification/n3/Solution$In.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2021/qualification/n3/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/competitiveProgramming/codejam/y2021/qualification/n3/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/codejam/y2020/round1a/c/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2020/round1a/c/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codejam/y2021/qualification/n4/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/codejam/y2021/qualification/n4/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,10 +107,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.MaxPairwiseProduct" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.Solution (1)" />
       <item itemvalue="Application.Solution (2)" />
       <item itemvalue="Application.Solution (3)" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
@@ -212,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640724317511</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Solved CodeJam y2021.q4">
+      <created>1640896032743</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640896032743</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,33 +232,34 @@
     <MESSAGE value="Hackercup 2020 solution. A3 is wrong." />
     <MESSAGE value="Edited round2.B" />
     <MESSAGE value="Solved CodeJam y2021.q1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved CodeJam y2021.q1" />
+    <MESSAGE value="Solved CodeJam y2021.q4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved CodeJam y2021.q4" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1554" y="294" key="CommitChangelistDialog2" timestamp="1640747814715">
+    <state x="1554" y="294" key="CommitChangelistDialog2" timestamp="1640896031905">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1554" y="294" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1640747814715" />
-    <state width="1236" height="289" key="GridCell.Tab.0.bottom" timestamp="1640887032582">
+    <state x="1554" y="294" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1640896031905" />
+    <state width="1236" height="289" key="GridCell.Tab.0.bottom" timestamp="1640905220778">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="289" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1640887032582" />
-    <state width="1236" height="289" key="GridCell.Tab.0.center" timestamp="1640887032582">
+    <state width="1236" height="289" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1640905220778" />
+    <state width="1236" height="289" key="GridCell.Tab.0.center" timestamp="1640905220778">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="289" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1640887032582" />
-    <state width="1236" height="289" key="GridCell.Tab.0.left" timestamp="1640887032581">
+    <state width="1236" height="289" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1640905220778" />
+    <state width="1236" height="289" key="GridCell.Tab.0.left" timestamp="1640905220778">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="289" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1640887032581" />
-    <state width="1236" height="289" key="GridCell.Tab.0.right" timestamp="1640887032582">
+    <state width="1236" height="289" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1640905220778" />
+    <state width="1236" height="289" key="GridCell.Tab.0.right" timestamp="1640905220778">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="289" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1640887032582" />
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1640896017174">
+    <state width="1236" height="289" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1640905220778" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1640903342615">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1640896017174" />
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1640903342615" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1640740167738">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
