@@ -56,3 +56,7 @@ public class Solution {
         //$
     }
 }
+
+// a <- b
+// [a, b, c]  a (b, c) // b (c)
+// [b c d]  d // b (d, c) // c (d)
